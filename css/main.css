@@ -415,6 +415,7 @@ a {
 .logo_bg {
   position: absolute;
   right: 0;
+  height: 100vh;
 }
 
 .overlay {
