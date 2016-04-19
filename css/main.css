@@ -384,8 +384,8 @@ a {
   font-size: 3.125rem;
   line-height: 1.2;
   color: #fff;
-  -webkit-animation-delay: 1s;
-          animation-delay: 1s;
+  -webkit-animation-delay: .5s;
+          animation-delay: .5s;
 }
 
 .main p {
@@ -395,8 +395,8 @@ a {
   line-height: 1.7;
   color: #fff;
   margin-bottom: 5.6875rem;
-  -webkit-animation-delay: 1s;
-          animation-delay: 1s;
+  -webkit-animation-delay: .5s;
+          animation-delay: .5s;
 }
 
 .main_btn {
@@ -404,8 +404,8 @@ a {
   width: 100%;
   float: left;
   margin-right: 2.12766%;
-  -webkit-animation-delay: 1s;
-          animation-delay: 1s;
+  -webkit-animation-delay: .5s;
+          animation-delay: .5s;
 }
 
 .main_btn.active {
@@ -799,8 +799,8 @@ a {
 
 .section h2.active {
   opacity: 1;
-  -webkit-animation-delay: 1s;
-          animation-delay: 1s;
+  -webkit-animation-delay: .5s;
+          animation-delay: .5s;
 }
 
 .section p {
@@ -815,8 +815,8 @@ a {
 
 .section p.active {
   opacity: 1;
-  -webkit-animation-delay: 1s;
-          animation-delay: 1s;
+  -webkit-animation-delay: .5s;
+          animation-delay: .5s;
 }
 
 .page_number {
@@ -837,6 +837,7 @@ a {
 
 .prod_bg {
   padding-bottom: 18.75rem;
+  background-attachment: fixed;
 }
 
 .prod_opn {
@@ -878,6 +879,11 @@ a {
   margin-bottom: 7.1875rem;
   -webkit-animation-delay: 1.5s;
           animation-delay: 1.5s;
+  opacity: 0;
+}
+
+.tags.active {
+  opacity: 1;
 }
 
 .tag {
@@ -885,7 +891,7 @@ a {
 }
 
 .tag:nth-of-type(even) {
-  padding-left: 60px;
+  padding-left: 3.75rem;
 }
 
 .next {
@@ -986,8 +992,8 @@ a {
 }
 
 .prod_img {
-  -webkit-animation-delay: 1s;
-          animation-delay: 1s;
+  -webkit-animation-delay: .5s;
+          animation-delay: .5s;
 }
 
 .prod_img img {
@@ -1034,8 +1040,8 @@ a {
   line-height: 1.2;
   color: #fff;
   margin-bottom: 3.25rem;
-  -webkit-animation-delay: 1s;
-          animation-delay: 1s;
+  -webkit-animation-delay: .5s;
+          animation-delay: .5s;
 }
 
 .prod_page_wrap .hero_img,

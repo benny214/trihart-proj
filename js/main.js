@@ -6,28 +6,35 @@ $(document).ready(function() {
   $('#fullpage').fullpage({
     anchors: ['firstPage', 'secondPage', '3rdPage', '4thpage', '5thpage', '6thpage', '7thpage'],
     afterLoad: function(anchorLink, index) {
-                    if (anchorLink == 'firstPage') {
-                        $('.section1 h2, .section1 p').addClass("active animated fadeInUp");
-                    }
-                    if (anchorLink == 'secondPage') {
-                        $('.section2 h2, .section2 p').addClass("active animated fadeInUp");
-                    }
-                    if (anchorLink == '3rdPage') {
-                        $('.section3 h2, .section3 p').addClass("active animated fadeInUp");
-                    }
-                    if (anchorLink == '4thpage') {
-                        $('.section4 h2, .section4 p').addClass("active animated fadeInUp");
-                    }
-                    if (anchorLink == '5thpage') {
-                        $('.section5 h2, .section5 p').addClass("active animated fadeInUp");
-                    }
-                    if (anchorLink == '6thpage') {
-                        $('.section6 h2, .section6 p').addClass("active animated fadeInUp");
-                    }
-                    if (anchorLink == '7thpage') {
-                        $('.section7 h2, .section7 p').addClass("active animated fadeInUp");
-                    }
-                }
+      if (anchorLink == 'firstPage') {
+          $('.section1 h2, .section1 p').addClass("active animated fadeInUp");
+          $('.section1 .tags').addClass("active animated fadeIn");
+      }
+      if (anchorLink == 'secondPage') {
+          $('.section2 h2, .section2 p').addClass("active animated fadeInUp");
+          $('.section2 .tags').addClass("active animated fadeIn");
+      }
+      if (anchorLink == '3rdPage') {
+          $('.section3 h2, .section3 p').addClass("active animated fadeInUp");
+          $('.section3 .tags').addClass("active animated fadeIn");
+      }
+      if (anchorLink == '4thpage') {
+          $('.section4 h2, .section4 p').addClass("active animated fadeInUp");
+          $('.section4 .tags').addClass("active animated fadeIn");
+      }
+      if (anchorLink == '5thpage') {
+          $('.section5 h2, .section5 p').addClass("active animated fadeInUp");
+          $('.section5 .tags').addClass("active animated fadeIn");
+      }
+      if (anchorLink == '6thpage') {
+          $('.section6 h2, .section6 p').addClass("active animated fadeInUp");
+          $('.section6 .tags').addClass("active animated fadeIn");
+      }
+      if (anchorLink == '7thpage') {
+          $('.section7 h2, .section7 p').addClass("active animated fadeInUp");
+          $('.section7 .tags').addClass("active animated fadeIn");
+      }
+    }
   });
   $(document).on('click', '#moveDown', function(){
     $.fn.fullpage.moveSectionDown();
