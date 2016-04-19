@@ -4,16 +4,30 @@ $(document).ready(function() {
 
 //fullpage scroll
   $('#fullpage').fullpage({
-    afterLoad:function(anchorLink, index){
-      if(index == 2){
-        $('.section h2, .section p').addClass("active animated fadeInUp");
-      }
-    },
-    // afterLoad:function(index){
-    //   if (index == 3 ){
-    //     $('.section h2, .section p').addClass("active animated fadeInUp");
-    //   }
-    // }
+    anchors: ['firstPage', 'secondPage', '3rdPage', '4thpage', '5thpage', '6thpage', '7thpage'],
+    afterLoad: function(anchorLink, index) {
+                    if (anchorLink == 'firstPage') {
+                        $('.section1 h2, .section1 p').addClass("active animated fadeInUp");
+                    }
+                    if (anchorLink == 'secondPage') {
+                        $('.section2 h2, .section2 p').addClass("active animated fadeInUp");
+                    }
+                    if (anchorLink == '3rdPage') {
+                        $('.section3 h2, .section3 p').addClass("active animated fadeInUp");
+                    }
+                    if (anchorLink == '4thpage') {
+                        $('.section4 h2, .section4 p').addClass("active animated fadeInUp");
+                    }
+                    if (anchorLink == '5thpage') {
+                        $('.section5 h2, .section5 p').addClass("active animated fadeInUp");
+                    }
+                    if (anchorLink == '6thpage') {
+                        $('.section6 h2, .section6 p').addClass("active animated fadeInUp");
+                    }
+                    if (anchorLink == '7thpage') {
+                        $('.section7 h2, .section7 p').addClass("active animated fadeInUp");
+                    }
+                }
   });
   $(document).on('click', '#moveDown', function(){
     $.fn.fullpage.moveSectionDown();
@@ -39,11 +53,6 @@ $(document).ready(function() {
   $('.grid_close').click(function() {
     $('.grid_nav').animate({right: "-69.375rem"}, 300);
   });
-
-
-
-
-
 
 });
 
