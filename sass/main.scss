@@ -787,11 +787,29 @@ a {
 }
 
 #fp-nav ul li{
+  margin: 7px 7px 20px 7px;
   &:first-of-type a span{
     display: none;
   }
-  &:nth-of-type(2) a span{
-    background: #8A8989;
+  &:nth-of-type(2) a span,
+  &:last-of-type a span{
+    background: #838181;
+  }
+  // &:nth-of-type(2) a span:before{
+  //   content: '^';
+  //   display: block;
+  //   position: absolute;
+  //   top: -20px;
+  //   color: #C2C1C1;
+  // }
+  &:nth-of-type(3) a span,
+  &:nth-of-type(5) a span{
+    background: #C2C1C1;
+  }
+  &:nth-of-type(4) a span{
+    height: 9px;
+    width: 9px;
+    border: 1px solid #fff;
   }
 }
 
@@ -807,6 +825,10 @@ a {
     background: #fff;
     height: 10px;
     width: 10px;
+    margin: -2px 0 0 -2px;
+  }
+  &:hover a{
+    background: #fff;
   }
 }
 

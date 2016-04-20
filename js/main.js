@@ -9,7 +9,7 @@ $(document).ready(function() {
     anchors: ['firstPage', 'secondPage', '3rdPage', '4thpage', '5thpage', '6thpage', '7thpage'],
     navigation: true,
     navigationPosition: 'right',
-    navigationTooltips: ['', 'Christopher Fischer', 'COOPER & ELLA', 'WAINAPP', 'WAINAPP', 'WAINAPP'],
+    navigationTooltips: ['', 'Christopher Fischer —', 'COOPER & ELLA —', 'WAINAPP —', 'WAINAPP —', 'WAINAPP —'],
     afterLoad: function(anchorLink, index) {
       if (anchorLink == 'firstPage') {
           $('.section1 h2, .section1 p').addClass('active animated fadeInUp');
@@ -24,18 +24,22 @@ $(document).ready(function() {
       if (anchorLink == '3rdPage') {
           $('.section3 h2, .section3 p').addClass('active animated fadeInUp');
           $('.section3 .tags').addClass('active animated fadeIn');
+          $('#fp-nav').removeClass('hidden');
       }
       if (anchorLink == '4thpage') {
           $('.section4 h2, .section4 p').addClass('active animated fadeInUp');
           $('.section4 .tags').addClass('active animated fadeIn');
+          $('#fp-nav').removeClass('hidden');
       }
       if (anchorLink == '5thpage') {
           $('.section5 h2, .section5 p').addClass('active animated fadeInUp');
           $('.section5 .tags').addClass('active animated fadeIn');
+          $('#fp-nav').removeClass('hidden');
       }
       if (anchorLink == '6thpage') {
           $('.section6 h2, .section6 p').addClass('active animated fadeInUp');
           $('.section6 .tags').addClass('active animated fadeIn');
+          $('#fp-nav').removeClass('hidden');
       }
     }
   });
