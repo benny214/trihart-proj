@@ -30,10 +30,6 @@ $(document).ready(function() {
           $('.section6 h2, .section6 p').addClass("active animated fadeInUp");
           $('.section6 .tags').addClass("active animated fadeIn");
       }
-      if (anchorLink == '7thpage') {
-          $('.section7 h2, .section7 p').addClass("active animated fadeInUp");
-          $('.section7 .tags').addClass("active animated fadeIn");
-      }
     }
   });
   $(document).on('click', '#moveDown', function(){
