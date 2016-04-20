@@ -50,11 +50,11 @@ $(document).ready(function() {
 
     // Nav Side-Slide
   $('.grid_opn').click(function() {
-    $('.grid_nav').animate({right: "0px"}, 300);
+    $('.grid_nav').animate({right: "0"}, 300);
   });
   
   $('.grid_close').click(function() {
-    $('.grid_nav').animate({right: "-69.375rem"}, 300);
+    $('.grid_nav').animate({right: "-90%"}, 300);
   });
 
 });
