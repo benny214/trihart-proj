@@ -38,13 +38,13 @@ $(document).ready(function() {
 
 //fullpage menu
   $('#toggle').click(function() {
-    $('.animation_wrap').removeClass('animated slideOutUp');
+    $('.animation_wrap').removeClass('animated fadeOutUp');
     $('#overlay').addClass('open');
-    $('.animation_wrap').addClass('animated slideInDown');
+    $('.animation_wrap').addClass('animated fadeInDown');
   });
   $('.close_nav').click(function() {
-    $('.animation_wrap').removeClass('animated slideInDown');
-    $('.animation_wrap').addClass('animated slideOutUp');
+    $('.animation_wrap').removeClass('animated fadeInDown');
+    $('.animation_wrap').addClass('animated fadeOutUp');
     $('#overlay').removeClass('open');
   });
 

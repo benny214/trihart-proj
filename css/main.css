@@ -720,8 +720,14 @@ a {
 
 .grid_opn {
   top: 205px;
-  right: 30px;
+  right: -203px;
   float: right;
+}
+
+@media screen and (max-width: 1024px) {
+  .grid_opn {
+    right: 0;
+  }
 }
 
 .grid_nav {
@@ -772,6 +778,7 @@ a {
   display: block;
   height: 100%;
   color: #000;
+  background-size: cover;
 }
 
 .prod_item a:hover {
@@ -827,7 +834,13 @@ a {
 .page_number {
   position: relative;
   top: 205px;
-  left: 30px;
+  left: -205px;
+}
+
+@media screen and (max-width: 1024px) {
+  .page_number {
+    left: 0;
+  }
 }
 
 .page_number span {
@@ -904,13 +917,13 @@ a {
 .next {
   position: absolute;
   top: 32px;
-  right: 32px;
+  right: -205px;
 }
 
 .prev {
   position: absolute;
   top: 32px;
-  left: 32px;
+  left: -205px;
 }
 
 .prod_page h2 {
