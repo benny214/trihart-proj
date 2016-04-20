@@ -822,12 +822,15 @@ a {
 
 .page_number {
   position: relative;
+  position: relative;
+  top: 12.8125rem;
+  left: 1.875rem;
 }
 
 .page_number span {
   position: absolute;
-  left: 0;
   top: 0;
+  left: 0;
   color: #fff;
   -webkit-transform: rotate(-270deg);
       -ms-transform: rotate(-270deg);
