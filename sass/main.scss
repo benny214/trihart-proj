@@ -281,6 +281,7 @@ a {
 
 .container {
   @include container;
+
   @media screen and (max-width: 768px) {
     // margin: 0;
   }
@@ -809,7 +810,6 @@ a {
 
 .page_number {
   position: relative;
-  position: relative;
   top: 205px;
   left: 30px;
 
@@ -896,13 +896,6 @@ a {
   h2 {
     font-size: em(50);
     color: #fff;
-  }
-
-  .page_number {
-    span {
-      top: 193px;
-      left: 20px;
-    }
   }
 
   .contact {
@@ -1021,6 +1014,7 @@ a {
 
   h2 {
     @include span(6);
+
     font-size: em(50);
     font-weight: 100;
     line-height: 1.2;

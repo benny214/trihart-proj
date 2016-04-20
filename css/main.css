@@ -826,7 +826,6 @@ a {
 
 .page_number {
   position: relative;
-  position: relative;
   top: 205px;
   left: 30px;
 }
@@ -917,11 +916,6 @@ a {
 .prod_page h2 {
   font-size: 3.125em;
   color: #fff;
-}
-
-.prod_page .page_number span {
-  top: 193px;
-  left: 20px;
 }
 
 .prod_page .contact {
