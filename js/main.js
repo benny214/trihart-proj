@@ -4,7 +4,7 @@ $(document).ready(function() {
 
 //fullpage scroll
   $('#fullpage').fullpage({
-    verticalCentered: false,
+    verticalCentered: true,
     css3: true,
     anchors: ['firstPage', 'secondPage', '3rdPage', '4thpage', '5thpage', '6thpage', '7thpage'],
     navigation: true,
@@ -62,10 +62,12 @@ $(document).ready(function() {
     // Nav Side-Slide
   $('.grid_opn').click(function() {
     $('.grid_nav').animate({right: '0'}, 300);
+    $('.grid_nav').addClass('open');
   });
   
   $('.grid_close').click(function() {
     $('.grid_nav').animate({right: '-90%'}, 300);
+    $('.grid_nav').removeClass('open');
   });
 
 });
