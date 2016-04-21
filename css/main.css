@@ -1310,9 +1310,10 @@ a {
 }
 
 .prod_opn svg {
-  width: 32px;
-  height: 28px;
-  padding-top: 12px;
+  width: 19px;
+  height: 20px;
+  margin: 11px auto;
+  display: block;
 }
 
 .section_nav {
