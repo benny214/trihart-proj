@@ -277,7 +277,7 @@ a {
   height: 100vh;
 }
 
-.hidden{
+.hidden {
   display: none;
 }
 
@@ -285,7 +285,8 @@ a {
   @include container;
 
   @media screen and (max-width: 768px) {
-    // margin: 0;
+    width: em(750);
+    padding: 0 em(20);
   }
 }
 
@@ -368,12 +369,20 @@ a {
   padding-top: 250px;
   bottom: 0;
 
+  @media screen and (max-width: 768px) {
+    padding-top: 125px;
+  }
+
   h1 {
     margin-bottom: 153px;
     font-size: em(50);
     line-height: 1.2;
     color: #fff;
     animation-delay: .5s;
+
+    @media screen and (max-width: 768px) {
+      margin-bottom: 70px;
+    }
   }
 
   p {
@@ -384,15 +393,19 @@ a {
     color: #fff;
     margin-bottom: 91px;
     animation-delay: .5s;
+
+    @media screen and (max-width: 768px) {
+      margin-bottom: 70px;
+    }
   }
 }
 
 .main_btn {
-  opacity: none;
+  opacity: 0;
 
   @include span(first 12);
 
-  animation-delay: .5s;
+  animation-delay: 1.7s;
 
   &.active {
     opacity: 1;
@@ -456,6 +469,10 @@ a {
       font-size: em(28);
     }
   }
+  @media screen and (max-width: 768px) {
+    @include push(4.5);
+    @include span(3);
+  }
 }
 
 .outline_block_heading {
@@ -468,6 +485,11 @@ a {
     font-size: em(41);
     letter-spacing: 8px;
     margin-bottom: 64px;
+    
+    @media screen and (max-width: 768px) {
+      font-size: 1.7em;
+      margin-bottom: 32px;
+    }
 
     &:before {
       content: '';
@@ -478,6 +500,10 @@ a {
       height: 3px;
       background: #2C2C2E;
       opacity: 1;
+      @media screen and (max-width: 768px) {
+          top: 16px;
+    left: -78px;
+    }
     }
 
     &:after {
@@ -489,9 +515,15 @@ a {
       height: 3px;
       background: #2C2C2E;
       opacity: 1;
+      @media screen and (max-width: 768px) {
+          top: 16px;
+    right: -78px;
+    }
     }
   }
 }
+
+
 
 .outline_block {
   color: #fff;
@@ -500,9 +532,15 @@ a {
   border-left: 3px solid #2C2C2E;
   border-right: 3px solid #2C2C2E;
   border-bottom: 3px solid #2C2C2E;
+  @media screen and (max-width: 768px){
+    margin-top: -53px;
+  }
 
   .col-10 {
     @include push(1);
+    @media screen and (max-width: 768px){
+    @include push(0);
+  }
   }
 
   label {
@@ -548,12 +586,16 @@ a {
 }
 
 .form_inputs {
+  @media screen and (max-width: 768px){
+    @include span(12);
+  }
   li {
     display: inline-block;
     margin-right: 76.76px;
-
+    
     &:last-of-type {
       margin-right: 0;
+      
     }
   }
 }
@@ -716,8 +758,14 @@ a {
   top: 205px;
   right: -203px;
   float: right;
+
   @media screen and (max-width: 1024px) {
     right: 0;
+  }
+
+  @media screen and (max-width: 768px) {
+    top: 125px;
+    right: 20px;
   }
 }
 
@@ -786,15 +834,18 @@ a {
   letter-spacing: 3px;
 }
 
-#fp-nav ul li{
+#fp-nav ul li {
   margin: 7px 7px 20px 7px;
-  &:first-of-type a span{
+
+  &:first-of-type a span {
     display: none;
   }
+
   &:nth-of-type(2) a span,
-  &:last-of-type a span{
+  &:last-of-type a span {
     background: #838181;
   }
+
   // &:nth-of-type(2) a span:before{
   //   content: '^';
   //   display: block;
@@ -803,31 +854,39 @@ a {
   //   color: #C2C1C1;
   // }
   &:nth-of-type(3) a span,
-  &:nth-of-type(5) a span{
+  &:nth-of-type(5) a span {
     background: #C2C1C1;
   }
-  &:nth-of-type(4) a span{
+
+  &:nth-of-type(4) a span {
     height: 9px;
     width: 9px;
     border: 1px solid #fff;
   }
 }
 
-#fp-nav ul li a{
-  span{
+#fp-nav{
+  animation-delay: 1.7s;
+  z-index: 5;
+}
+
+#fp-nav ul li a {
+  span {
     height: 10px;
     width: 10px;
   }
+
   // &:first-of-type{
   //   display: none;
   // }
-  &.active span{
+  &.active span {
     background: #fff;
     height: 10px;
     width: 10px;
     margin: -2px 0 0 -2px;
   }
-  &:hover a{
+
+  &:hover a {
     background: #fff;
   }
 }
@@ -836,10 +895,14 @@ a {
   color: #fff;
   background-size: cover;
 
-  & h2 {
+  h2 {
     opacity: 0;
     font-size: em(50);
     margin-bottom: 33px;
+
+    @media screen and (max-width: 768px) {
+      @include span(8);
+    }
 
     &.active {
       opacity: 1;
@@ -868,8 +931,14 @@ a {
   position: relative;
   top: 205px;
   left: -205px;
+
   @media screen and (max-width: 1024px) {
     left: 0;
+  }
+
+  @media screen and (max-width: 768px) {
+    top: 125px;
+    left: 20px;
   }
 
   span {
@@ -901,6 +970,10 @@ a {
 
   @include push(10);
 
+  @media screen and (max-width: 768px) {
+    @include push(9);
+  }
+
   li {
     float: left;
   }
@@ -925,6 +998,13 @@ a {
   margin-bottom: 115px;
   animation-delay: 1.5s;
   opacity: 0;
+
+  @media screen and (max-width: 768px) {
+    margin-top: 160px;
+    margin-bottom: 80px;
+
+    @include push(7);
+  }
 
   &.active {
     opacity: 1;
@@ -967,6 +1047,7 @@ a {
     margin-top: -35px;
 
     h3 {
+
       &:before {
         content: '';
         position: absolute;
@@ -989,6 +1070,7 @@ a {
         opacity: 1;
       }
     }
+    
   }
 
   .outline_block {
@@ -1087,8 +1169,8 @@ a {
     background-size: cover;
     background-attachment: fixed;
     padding-top: 367px;
-    
-    h2{
+
+    h2 {
       @include span(11);
     }
 
