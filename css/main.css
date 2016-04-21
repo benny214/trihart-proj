@@ -534,7 +534,7 @@ a {
   content: '';
   position: absolute;
   top: 34px;
-  left: -80px;
+  left: -82px;
   width: 72px;
   height: 3px;
   background: #2C2C2E;
@@ -551,7 +551,7 @@ a {
 .outline_block_heading h3:after {
   content: '';
   position: absolute;
-  top: 35px;
+  top: 34px;
   right: -82px;
   width: 72px;
   height: 3px;
@@ -602,6 +602,7 @@ a {
   display: block;
   width: 100%;
   margin-top: 52px;
+  line-height: 1;
 }
 
 @media screen and (max-width: 768px) {
@@ -1165,6 +1166,10 @@ a {
   opacity: 1;
 }
 
+.prod_page .outline_block {
+  margin-top: -83px;
+}
+
 @media screen and (max-width: 768px) {
   .prod_page .outline_block {
     margin-top: -98px;
@@ -1173,7 +1178,7 @@ a {
 
 .prod_page .outline_block p {
   margin-left: 25.53191%;
-  margin-top: -28px;
+  margin-top: 63px;
   margin-bottom: 80px;
   font-size: 1.125em;
   line-height: 1.7;
