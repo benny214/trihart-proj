@@ -1130,6 +1130,12 @@ a {
   margin-top: -35px;
 }
 
+@media screen and (max-width: 768px) {
+  .prod_page .outline_block_heading {
+    margin-top: -135px;
+  }
+}
+
 .prod_page .outline_block_heading h3:before {
   content: '';
   position: absolute;
@@ -1152,12 +1158,25 @@ a {
   opacity: 1;
 }
 
+@media screen and (max-width: 768px) {
+  .prod_page .outline_block {
+    margin-top: -98px;
+  }
+}
+
 .prod_page .outline_block p {
   margin-left: 25.53191%;
   margin-top: -28px;
   margin-bottom: 80px;
   font-size: 1.125em;
   line-height: 1.7;
+}
+
+@media screen and (max-width: 768px) {
+  .prod_page .outline_block p {
+    margin-top: 28px;
+    margin-bottom: 50px;
+  }
 }
 
 .prod_page .outline_block_btn {

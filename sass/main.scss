@@ -1057,6 +1057,10 @@ a {
     @include span(12);
 
     margin-top: -35px;
+    
+    @media screen and (max-width: 768px){
+      margin-top: -135px;
+    }
 
     h3 {
 
@@ -1086,6 +1090,9 @@ a {
   }
 
   .outline_block {
+    @media screen and (max-width: 768px){
+      margin-top: -98px;
+    }
     p {
       @include push(3);
 
@@ -1093,6 +1100,10 @@ a {
       margin-bottom: 80px;
       font-size: em(18);
       line-height: 1.7;
+      @media screen and (max-width: 768px){
+      margin-top: 28px;
+      margin-bottom: 50px;
+    }
     }
   }
 
