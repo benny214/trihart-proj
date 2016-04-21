@@ -288,7 +288,7 @@ a {
 .container {
   @include container;
 
-  @media screen and (min-width: 769px) and (max-width: 1024px) {
+  @media screen and (min-width: 768px) and (max-width: 1024px) {
     width: em(750);
     padding: 0 em(20);
   }
@@ -383,7 +383,7 @@ a {
   padding-top: 250px;
   bottom: 0;
 
-  @media screen and (min-width: 769px) and (max-width: 1024px) {
+  @media screen and (min-width: 768px) and (max-width: 1024px) {
     padding-top: 125px;
   }
 
@@ -398,7 +398,7 @@ a {
     color: #fff;
     animation-delay: .5s;
 
-    @media screen and (min-width: 769px) and (max-width: 1024px) {
+    @media screen and (min-width: 768px) and (max-width: 1024px) {
       margin-bottom: 70px;
     }
 
@@ -417,7 +417,7 @@ a {
     margin-bottom: 91px;
     animation-delay: .5s;
 
-    @media screen and (min-width: 769px) and (max-width: 1024px) {
+    @media screen and (min-width: 768px) and (max-width: 1024px) {
       margin-bottom: 70px;
     }
 
@@ -511,7 +511,7 @@ a {
     }
   }
 
-  @media screen and (min-width: 769px) and (max-width: 1024px) {
+  @media screen and (min-width: 768px) and (max-width: 1024px) {
     @include push(4.5);
 
     @include span(3);
@@ -533,7 +533,7 @@ a {
     letter-spacing: 8px;
     margin-bottom: 64px;
 
-    @media screen and (min-width: 769px) and (max-width: 1024px) {
+    @media screen and (min-width: 768px) and (max-width: 1024px) {
       font-size: 1.7em;
       margin-bottom: 32px;
     }
@@ -553,7 +553,7 @@ a {
       background: #2C2C2E;
       opacity: 1;
 
-      @media screen and (min-width: 769px) and (max-width: 1024px) {
+      @media screen and (min-width: 768px) and (max-width: 1024px) {
         top: 16px;
         left: -78px;
       }
@@ -573,7 +573,7 @@ a {
       background: #2C2C2E;
       opacity: 1;
 
-      @media screen and (min-width: 769px) and (max-width: 1024px) {
+      @media screen and (min-width: 768px) and (max-width: 1024px) {
         top: 16px;
         right: -78px;
       }
@@ -593,7 +593,7 @@ a {
   border-right: 3px solid #2C2C2E;
   border-bottom: 3px solid #2C2C2E;
 
-  @media screen and (min-width: 769px) and (max-width: 1024px) {
+  @media screen and (min-width: 768px) and (max-width: 1024px) {
     margin-top: -53px;
   }
 
@@ -604,7 +604,7 @@ a {
   .col-10 {
     @include push(1);
 
-    @media screen and (min-width: 769px) and (max-width: 1024px) {
+    @media screen and (min-width: 768px) and (max-width: 1024px) {
       @include push(0);
     }
   }
@@ -626,7 +626,7 @@ a {
     margin-top: 52px;
     line-height: 1;
 
-    @media screen and (min-width: 769px) and (max-width: 1024px) {
+    @media screen and (min-width: 768px) and (max-width: 1024px) {
       line-height: 1;
     }
 
@@ -678,7 +678,7 @@ a {
 }
 
 .form_inputs {
-  @media screen and (min-width: 769px) and (max-width: 1024px) {
+  @media screen and (min-width: 768px) and (max-width: 1024px) {
     @include span(12);
   }
 
@@ -695,7 +695,7 @@ a {
 .textarea_wrap {
   margin-bottom: 64px;
 
-  @media screen and (min-width: 769px) and (max-width: 1024px) {
+  @media screen and (min-width: 768px) and (max-width: 1024px) {
     @include span(12);
 
     margin-bottom: 64px;
@@ -874,7 +874,7 @@ a {
     right: 0;
   }
 
-  @media screen and (min-width: 769px) and (max-width: 1024px) {
+  @media screen and (min-width: 768px) and (max-width: 1024px) {
     top: 125px;
     right: 20px;
   }
@@ -1034,7 +1034,7 @@ a {
     font-size: em(50);
     margin-bottom: 33px;
 
-    @media screen and (min-width: 769px) and (max-width: 1024px) {
+    @media screen and (min-width: 768px) and (max-width: 1024px) {
       @include span(8);
     }
 
@@ -1081,7 +1081,7 @@ a {
     left: 0;
   }
 
-  @media screen and (min-width: 769px) and (max-width: 1024px) {
+  @media screen and (min-width: 768px) and (max-width: 1024px) {
     top: 125px;
     left: 20px;
   }
@@ -1130,7 +1130,7 @@ a {
 
   @include push(10);
 
-  @media screen and (min-width: 769px) and (max-width: 1024px) {
+  @media screen and (min-width: 768px) and (max-width: 1024px) {
     @include push(9);
   }
 
@@ -1167,7 +1167,7 @@ a {
   animation-delay: 1.5s;
   opacity: 0;
 
-  @media screen and (min-width: 769px) and (max-width: 1024px) {
+  @media screen and (min-width: 768px) and (max-width: 1024px) {
     margin-top: 160px;
     margin-bottom: 80px;
 
@@ -1228,7 +1228,7 @@ a {
 
     margin-top: -35px;
 
-    @media screen and (min-width: 769px) and (max-width: 1024px) {
+    @media screen and (min-width: 768px) and (max-width: 1024px) {
       margin-top: -135px;
     }
     @media screen and (min-width: 300px) and (max-width: 767px){
@@ -1271,7 +1271,7 @@ a {
   .outline_block {
     margin-top: -83px;
 
-    @media screen and (min-width: 769px) and (max-width: 1024px) {
+    @media screen and (min-width: 768px) and (max-width: 1024px) {
       margin-top: -98px;
     }
 
@@ -1283,7 +1283,7 @@ a {
       font-size: em(18);
       line-height: 1.7;
 
-      @media screen and (min-width: 769px) and (max-width: 1024px) {
+      @media screen and (min-width: 768px) and (max-width: 1024px) {
         margin-top: 28px;
         margin-bottom: 50px;
       }
@@ -1346,7 +1346,7 @@ a {
 }
 
 .controls_wrap {
-  @media screen and (min-width: 769px) and (max-width: 1024px) {
+  @media screen and (min-width: 768px) and (max-width: 1024px) {
     display: none;
   }
 }
