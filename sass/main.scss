@@ -365,10 +365,11 @@ a {
 .nav_btn {
   border: none;
   background-color: rgba(0, 0, 0, 0);
-  img{
+
+  img {
     @media screen and (min-width: 300px) and (max-width: 767px) {
-    transform: scale(2);
-  }
+      transform: scale(2);
+    }
   }
 }
 
@@ -672,6 +673,7 @@ a {
 
 .check_wrap {
   display: inline-block;
+
   @media screen and (min-width: 300px) and (max-width: 767px) {
     @include span(12);
   }
@@ -961,10 +963,11 @@ a {
   left: 30px;
   font-size: em(21);
   letter-spacing: 3px;
-  @media screen and (min-width: 300px) and (max-width: 767px){
+
+  @media screen and (min-width: 300px) and (max-width: 767px) {
     font-size: 0.7em;
     top: 10px;
-  left: 10px;
+    left: 10px;
   }
 }
 
@@ -1105,7 +1108,8 @@ a {
 .prod_bg {
   padding-bottom: 300px;
   background-attachment: fixed;
-  @media screen and (min-width: 300px) and (max-width: 767px){
+
+  @media screen and (min-width: 300px) and (max-width: 767px) {
     padding-bottom: 0;
   }
 }
@@ -1181,9 +1185,10 @@ a {
       display: none;
     }
   }
+
   @media screen and (min-width: 300px) and (max-width: 767px) {
-      display: none;
-    }
+    display: none;
+  }
 }
 
 .tag {
@@ -1218,7 +1223,8 @@ a {
 
   .contact {
     margin-bottom: 200px;
-    @media screen and (min-width: 300px) and (max-width: 767px){
+
+    @media screen and (min-width: 300px) and (max-width: 767px) {
       margin-top: -112px;
     }
   }
@@ -1231,7 +1237,8 @@ a {
     @media screen and (min-width: 768px) and (max-width: 1024px) {
       margin-top: -135px;
     }
-    @media screen and (min-width: 300px) and (max-width: 767px){
+
+    @media screen and (min-width: 300px) and (max-width: 767px) {
       margin-top: 0px;
     }
 
@@ -1287,11 +1294,13 @@ a {
         margin-top: 28px;
         margin-bottom: 50px;
       }
-      @media screen and (min-width: 300px) and (max-width: 767px){
-           @include span(12);
-            font-size: 0.7em;
-            margin-top: 0;
-     }
+
+      @media screen and (min-width: 300px) and (max-width: 767px) {
+        @include span(12);
+
+        font-size: 0.7em;
+        margin-top: 0;
+      }
     }
   }
 
@@ -1309,10 +1318,12 @@ a {
     font-size: em(28);
     line-height: 1.3;
     margin-bottom: 55px;
-     @media screen and (min-width: 300px) and (max-width: 767px){
-           @include span(12);
-    font-size: 1.2em;
-     }
+
+    @media screen and (min-width: 300px) and (max-width: 767px) {
+      @include span(12);
+
+      font-size: 1.2em;
+    }
   }
 
   p {
@@ -1323,13 +1334,15 @@ a {
     font-size: em(18);
     line-height: 1.7;
     margin-bottom: 113px;
-    @media screen and (min-width: 300px) and (max-width: 767px){
-           @include span(12);
-    font-size: 0.7em;
-    column-count: 1;
-    column-gap: 0;
-    margin-bottom: 60px;
-     }
+
+    @media screen and (min-width: 300px) and (max-width: 767px) {
+      @include span(12);
+
+      font-size: 0.7em;
+      column-count: 1;
+      column-gap: 0;
+      margin-bottom: 60px;
+    }
   }
 }
 
@@ -1339,7 +1352,8 @@ a {
   img {
     margin-top: -225px;
     margin-bottom: 77px;
-    @media screen and (min-width: 300px) and (max-width: 767px){
+
+    @media screen and (min-width: 300px) and (max-width: 767px) {
       margin-top: 0;
     }
   }
@@ -1362,7 +1376,8 @@ a {
 
 .footer {
   padding-bottom: 85px;
-  @media screen and (min-width: 300px) and (max-width: 767px){
+
+  @media screen and (min-width: 300px) and (max-width: 767px) {
     padding-bottom: 0;
   }
 
@@ -1370,10 +1385,12 @@ a {
     color: #747475;
     font-size: em(18);
     line-height: 1.7;
-    @media screen and (min-width: 300px) and (max-width: 767px){
-           @include span(10);
-    font-size: 0.7em;
-     }
+
+    @media screen and (min-width: 300px) and (max-width: 767px) {
+      @include span(10);
+
+      font-size: 0.7em;
+    }
   }
 }
 
@@ -1400,6 +1417,7 @@ a {
     color: #fff;
     margin-bottom: 52px;
     animation-delay: .5s;
+
     @media screen and (min-width: 300px) and (max-width: 767px) {
       @include span(12);
 
@@ -1413,7 +1431,8 @@ a {
     background-size: cover;
     background-attachment: fixed;
     padding-top: 367px;
-    @media screen and (min-width: 300px) and (max-width: 767px){
+
+    @media screen and (min-width: 300px) and (max-width: 767px) {
       padding-top: 10px;
     }
 
@@ -1426,11 +1445,13 @@ a {
       line-height: 1.7;
       color: #fff;
       margin-bottom: 80px;
-      @media screen and (min-width: 300px) and (max-width: 767px){
-           @include span(12);
-    font-size: 0.7em;
-    margin-bottom: 20px;
-     }
+
+      @media screen and (min-width: 300px) and (max-width: 767px) {
+        @include span(12);
+
+        font-size: 0.7em;
+        margin-bottom: 20px;
+      }
     }
   }
 }
@@ -1439,19 +1460,22 @@ a {
   background-color: #eaeaea;
   padding-top: 128px;
   margin-bottom: 271px;
-  @media screen and (min-width: 300px) and (max-width: 767px){
+
+  @media screen and (min-width: 300px) and (max-width: 767px) {
     padding-top: 28px;
-  margin-bottom: 0px;
+    margin-bottom: 0px;
   }
 
   h3 {
     font-size: em(28);
     line-height: 1.3;
     margin-bottom: 115px;
-    @media screen and (min-width: 300px) and (max-width: 767px){
-           @include span(12);
-    font-size: 1.2em;
-     }
+
+    @media screen and (min-width: 300px) and (max-width: 767px) {
+      @include span(12);
+
+      font-size: 1.2em;
+    }
   }
 
   p {
@@ -1460,28 +1484,32 @@ a {
     font-size: em(18);
     line-height: 1.7;
     margin-bottom: 138px;
-    @media screen and (min-width: 300px) and (max-width: 767px){
-           @include span(12);
-    font-size: 0.7em;
-    margin-bottom: 38px;
-     }
+
+    @media screen and (min-width: 300px) and (max-width: 767px) {
+      @include span(12);
+
+      font-size: 0.7em;
+      margin-bottom: 38px;
+    }
   }
 
   .about_img {
     position: absolute;
     left: 0;
     top: 313px;
-    @media screen and (min-width: 300px) and (max-width: 767px){
+
+    @media screen and (min-width: 300px) and (max-width: 767px) {
       position: relative;
-          top: -260px;
-    left: 21%;
+      top: -260px;
+      left: 21%;
     }
   }
 }
 
 .team {
   margin-bottom: 156px;
-  @media screen and (min-width: 300px) and (max-width: 767px){
+
+  @media screen and (min-width: 300px) and (max-width: 767px) {
     margin-bottom: 0;
   }
 
@@ -1490,18 +1518,22 @@ a {
     line-height: 1.3;
     color: #fff;
     margin-bottom: 132px;
-    @media screen and (min-width: 300px) and (max-width: 767px){
-           @include span(12);
-    font-size: 1.2em;
-    margin-bottom: 60px;
-     }
+
+    @media screen and (min-width: 300px) and (max-width: 767px) {
+      @include span(12);
+
+      font-size: 1.2em;
+      margin-bottom: 60px;
+    }
   }
 }
 
 .team_members {
   text-align: center;
-  @media screen and (min-width: 300px) and (max-width: 767px){
+
+  @media screen and (min-width: 300px) and (max-width: 767px) {
     @include span(12);
+
     text-align: left;
   }
 
@@ -1511,10 +1543,11 @@ a {
     border-radius: 50%;
     border: 1px solid #232325;
     margin: 0 auto 58px auto;
-    @media screen and (min-width: 300px) and (max-width: 767px){
-    width: 90px;
-    height: 90px;
-    float: left;
+
+    @media screen and (min-width: 300px) and (max-width: 767px) {
+      width: 90px;
+      height: 90px;
+      float: left;
     }
   }
 
@@ -1522,15 +1555,18 @@ a {
     font-size: em(18);
     line-height: 1.7;
     color: #8A8A8B;
-    @media screen and (min-width: 300px) and (max-width: 767px){
-    font-size: 0.7em;
-    @include span(last 8);
-     }
+
+    @media screen and (min-width: 300px) and (max-width: 767px) {
+      font-size: 0.7em;
+
+      @include span(last 8);
+    }
   }
 
   &:last-of-type {
     @include span(last 4);
-    @media screen and (min-width: 300px) and (max-width: 767px){
+
+    @media screen and (min-width: 300px) and (max-width: 767px) {
       @include span(12);
     }
   }
@@ -1542,10 +1578,11 @@ a {
   padding-top: 136px;
   padding-bottom: 160px;
   margin-bottom: 82px;
-  @media screen and (min-width: 300px) and (max-width: 767px){
+
+  @media screen and (min-width: 300px) and (max-width: 767px) {
     padding-top: 70px;
     padding-bottom: 70px;
-  margin-bottom: 40px;
+    margin-bottom: 40px;
   }
 }
 
@@ -1554,25 +1591,29 @@ a {
   line-height: 1.3;
   color: #fff;
   margin-bottom: 79px;
-  @media screen and (min-width: 300px) and (max-width: 767px){
-           @include span(12);
+
+  @media screen and (min-width: 300px) and (max-width: 767px) {
+    @include span(12);
+
     font-size: 1.2em;
-     }
+  }
 }
 
 .contact_item {
   padding-left: 28px;
-  @media screen and (min-width: 300px) and (max-width: 767px){
-           @include span(12);
-     }
+
+  @media screen and (min-width: 300px) and (max-width: 767px) {
+    @include span(12);
+  }
 
   span, a {
     font-size: em(18);
     line-height: 1.7;
     color: #8A8A8B;
-    @media screen and (min-width: 300px) and (max-width: 767px){
-           font-size: 0.7em;
-     }
+
+    @media screen and (min-width: 300px) and (max-width: 767px) {
+      font-size: 0.7em;
+    }
   }
 
   .location:before {
@@ -1621,8 +1662,9 @@ a {
 
   &:last-of-type {
     @include span(last 4);
-    @media screen and (min-width: 300px) and (max-width: 767px){
-           @include span(12);
-     }
+
+    @media screen and (min-width: 300px) and (max-width: 767px) {
+      @include span(12);
+    }
   }
 }
