@@ -292,6 +292,10 @@ a {
     width: em(750);
     padding: 0 em(20);
   }
+  @media screen and (max-width: 320px) {
+    width: em(300);
+    padding: 0 em(0);
+  }
 }
 
 //grid
@@ -377,6 +381,10 @@ a {
     padding-top: 125px;
   }
 
+  @media screen and (max-width: 320px) {
+    padding-top: 62px;
+  }
+
   h1 {
     margin-bottom: 153px;
     font-size: em(50);
@@ -387,6 +395,11 @@ a {
     @media screen and (max-width: 768px) {
       margin-bottom: 70px;
     }
+
+    @media screen and (max-width: 320px) {
+    font-size: 2em;
+    margin-bottom: 35px;
+  }
   }
 
   p {
@@ -401,6 +414,15 @@ a {
     @media screen and (max-width: 768px) {
       margin-bottom: 70px;
     }
+    @media screen and (max-width: 320px){
+      font-size: 1em;
+    }
+  }
+  .col-6{
+    @media screen and (max-width: 320px) {
+    @include span(10);
+    
+  }
   }
 }
 
@@ -475,6 +497,9 @@ a {
 
     a {
       font-size: em(28);
+      @media screen and (max-width: 320px){
+        font-size: em(18);
+      }
     }
   }
 
@@ -482,6 +507,10 @@ a {
     @include push(4.5);
 
     @include span(3);
+  }
+
+  @media screen and (max-width: 320px){
+    @include span(12);
   }
 }
 
@@ -501,6 +530,11 @@ a {
       margin-bottom: 32px;
     }
 
+    @media screen and (max-width: 320px){
+      font-size: 1em;
+      margin-bottom: 16px;
+    }
+
     &:before {
       content: '';
       position: absolute;
@@ -515,6 +549,9 @@ a {
         top: 16px;
         left: -78px;
       }
+      @media screen and (max-width: 320px){
+    display: none;
+  }
     }
 
     &:after {
@@ -531,6 +568,9 @@ a {
         top: 16px;
         right: -78px;
       }
+      @media screen and (max-width: 320px){
+    display: none;
+  }
     }
   }
 }
@@ -547,6 +587,10 @@ a {
     margin-top: -53px;
   }
 
+  @media screen and (max-width: 320px){
+    border: none;
+  }
+
   .col-10 {
     @include push(1);
 
@@ -559,6 +603,9 @@ a {
     color: #fff;
     margin-right: 57px;
     font-size: em(18);
+    @media screen and (max-width: 320px){
+      font-size: 0.7em;
+    }
   }
 
   textarea {
@@ -570,6 +617,10 @@ a {
 
     @media screen and (max-width: 768px) {
       line-height: 1;
+    }
+
+    @media screen and (max-width: 320px) {
+      margin-top: 0;
     }
 
     &::-webkit-input-placeholder {
@@ -600,6 +651,16 @@ a {
 
 .checks {
   margin-bottom: 26px;
+  @media screen and (max-width: 320px){
+    @include span(12);
+    margin-bottom: 0;
+  }
+}
+
+.check_wrap{
+  @media screen and (max-width: 320px){
+    @include span(12);
+  }
 }
 
 .form_inputs {
@@ -625,6 +686,9 @@ a {
 
     margin-bottom: 64px;
   }
+  @media screen and (max-width: 320px){
+    margin-bottom: 32px;
+  }
 }
 
 .textbox {
@@ -638,6 +702,9 @@ a {
   line-height: 1.7;
   color: #fff;
   border-radius: 0;
+  @media screen and (max-width: 320px){
+    font-size: 0.7em;
+  }
 
   &:last-of-type {
     margin-right: 0;
@@ -708,6 +775,7 @@ a {
   width: 140px;
   height: 44px;
   transition: all 0.3s ease-in;
+  
 }
 
 .checkbox {
@@ -948,6 +1016,9 @@ a {
       opacity: 1;
       animation-delay: .5s;
     }
+    @media screen and (max-width: 320px){
+      font-size: 1em;
+    }
   }
 }
 
@@ -1081,6 +1152,7 @@ a {
       margin-top: -135px;
     }
 
+
     h3 {
       &:before {
         content: '';
@@ -1092,6 +1164,9 @@ a {
         background: #2C2C2E;
         opacity: 1;
       }
+      @media screen and (max-width: 320px){
+        display: none;
+      }
 
       &:after {
         content: '';
@@ -1102,6 +1177,9 @@ a {
         height: 3px;
         background: #2C2C2E;
         opacity: 1;
+      }
+      @media screen and (max-width: 320px){
+        display: none;
       }
     }
   }
