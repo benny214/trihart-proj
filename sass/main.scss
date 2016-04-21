@@ -380,6 +380,7 @@ a {
   z-index: 9;
 }
 
+
 .main {
   padding-top: 250px;
   bottom: 0;
@@ -391,6 +392,20 @@ a {
   @media screen and (min-width: 300px) and (max-width: 767px) {
     padding-top: 62px;
   }
+
+.grid_opn{
+  top: 0;
+    right: -203px;
+    float: right;
+    @media screen and (max-width: 1024px) and (min-width: 768px){
+      right: 16px;
+    }
+    @media screen and (max-width: 767px) and (min-width: 300px){
+      right: 16px;
+      top: 0;
+      float: right;
+    }
+}
 
   h1 {
     margin-bottom: 153px;
@@ -444,6 +459,32 @@ a {
   &.active {
     opacity: 1;
   }
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  40% {
+    -moz-transform: translateY(-30px);
+    -ms-transform: translateY(-30px);
+    -webkit-transform: translateY(-30px);
+    transform: translateY(-30px);
+  }
+  60% {
+    -moz-transform: translateY(-15px);
+    -ms-transform: translateY(-15px);
+    -webkit-transform: translateY(-15px);
+    transform: translateY(-15px);
+  }
+}
+
+.bounce {
+  animation: bounce 2s infinite;
+  animation-delay: 2s;
 }
 
 .logo_bg {

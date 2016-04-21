@@ -14,7 +14,7 @@ $(document).ready(function() {
       if (anchorLink == 'firstPage') {
           $('.section1 h2, .section1 p').addClass('active animated fadeInUp');
           $('.section1 .tags').addClass('active animated fadeIn');
-          $('.main_btn').addClass('active animated fadeIn');
+          $('.main_btn').addClass('active bounce');;
           $('#fp-nav').addClass('hidden');
       }
       if (anchorLink == 'secondPage') {
