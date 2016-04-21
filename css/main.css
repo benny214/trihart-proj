@@ -281,14 +281,14 @@ a {
   clear: both;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 48em) {
   .container {
     width: 46.875em;
     padding: 0 1.25em;
   }
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 20em) {
   .container {
     width: 18.75em;
     padding: 0 0em;
@@ -401,13 +401,13 @@ a {
   bottom: 0;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 48em) {
   .main {
     padding-top: 125px;
   }
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 20em) {
   .main {
     padding-top: 62px;
   }
@@ -422,13 +422,13 @@ a {
           animation-delay: .5s;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 48em) {
   .main h1 {
     margin-bottom: 70px;
   }
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 20em) {
   .main h1 {
     font-size: 2em;
     margin-bottom: 35px;
@@ -446,19 +446,19 @@ a {
           animation-delay: .5s;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 48em) {
   .main p {
     margin-bottom: 70px;
   }
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 20em) {
   .main p {
     font-size: 1em;
   }
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 20em) {
   .main .col-6 {
     width: 82.97872%;
     float: left;
@@ -539,13 +539,13 @@ a {
   font-size: 1.75em;
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 20em) {
   .navigation li a {
     font-size: 1.125em;
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 48em) {
   .navigation {
     margin-left: 38.29787%;
     width: 23.40426%;
@@ -554,7 +554,7 @@ a {
   }
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 20em) {
   .navigation {
     width: 100%;
     float: left;
@@ -576,14 +576,14 @@ a {
   margin-bottom: 64px;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 48em) {
   .outline_block_heading h3 {
     font-size: 1.7em;
     margin-bottom: 32px;
   }
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 20em) {
   .outline_block_heading h3 {
     font-size: 1em;
     margin-bottom: 16px;
@@ -601,14 +601,14 @@ a {
   opacity: 1;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 48em) {
   .outline_block_heading h3:before {
     top: 16px;
     left: -78px;
   }
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 20em) {
   .outline_block_heading h3:before {
     display: none;
   }
@@ -625,14 +625,14 @@ a {
   opacity: 1;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 48em) {
   .outline_block_heading h3:after {
     top: 16px;
     right: -78px;
   }
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 20em) {
   .outline_block_heading h3:after {
     display: none;
   }
@@ -647,13 +647,13 @@ a {
   border-bottom: 3px solid #2C2C2E;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 48em) {
   .outline_block {
     margin-top: -53px;
   }
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 20em) {
   .outline_block {
     border: none;
   }
@@ -663,7 +663,7 @@ a {
   margin-left: 8.51064%;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 48em) {
   .outline_block .col-10 {
     margin-left: 0%;
   }
@@ -675,7 +675,7 @@ a {
   font-size: 1.125em;
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 20em) {
   .outline_block label {
     font-size: 0.7em;
   }
@@ -689,13 +689,13 @@ a {
   line-height: 1;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 48em) {
   .outline_block textarea {
     line-height: 1;
   }
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 20em) {
   .outline_block textarea {
     margin-top: 0;
   }
@@ -730,7 +730,7 @@ a {
   margin-bottom: 26px;
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 20em) {
   .checks {
     width: 100%;
     float: left;
@@ -744,7 +744,7 @@ a {
   display: inline-block;
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 20em) {
   .check_wrap {
     width: 100%;
     float: left;
@@ -753,7 +753,7 @@ a {
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 48em) {
   .form_inputs {
     width: 100%;
     float: left;
@@ -775,7 +775,7 @@ a {
   margin-bottom: 64px;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 48em) {
   .textarea_wrap {
     width: 100%;
     float: left;
@@ -785,7 +785,7 @@ a {
   }
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 20em) {
   .textarea_wrap {
     margin-bottom: 32px;
   }
@@ -804,7 +804,7 @@ a {
   border-radius: 0;
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 20em) {
   .textbox {
     font-size: 0.7em;
   }
@@ -916,7 +916,7 @@ a {
   opacity: 0;
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 20em) {
   .checkbox:not(checked) + label:after {
     top: 3px;
   }
@@ -967,14 +967,14 @@ a {
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 48em) {
   .grid_opn {
     top: 125px;
     right: 20px;
   }
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 20em) {
   .grid_opn {
     top: 62px;
     right: 0px;
@@ -997,7 +997,7 @@ a {
   margin-bottom: 35px;
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 20em) {
   .sorting_list {
     text-align: center;
   }
@@ -1008,7 +1008,7 @@ a {
   margin-right: 40px;
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 20em) {
   .sorting_item {
     margin-right: 0;
     margin-left: 10px;
@@ -1021,7 +1021,7 @@ a {
   color: #fff;
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 20em) {
   .sorting_item a {
     font-size: 1.125em;
   }
@@ -1068,7 +1068,7 @@ a {
   letter-spacing: 3px;
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 20em) {
   .prod_name {
     font-size: 0.7em;
     top: 10px;
@@ -1133,7 +1133,7 @@ a {
   margin-bottom: 33px;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 48em) {
   .section h2 {
     width: 65.95745%;
     float: left;
@@ -1141,7 +1141,7 @@ a {
   }
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 20em) {
   .section h2 {
     width: 100%;
     float: left;
@@ -1174,7 +1174,7 @@ a {
           animation-delay: .5s;
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 20em) {
   .section p {
     font-size: 0.7em;
   }
@@ -1192,14 +1192,14 @@ a {
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 48em) {
   .page_number {
     top: 125px;
     left: 20px;
   }
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 20em) {
   .page_number {
     top: 63px;
     left: 0;
@@ -1223,7 +1223,7 @@ a {
   background-attachment: fixed;
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 20em) {
   .prod_bg {
     padding-bottom: 0;
   }
@@ -1251,13 +1251,13 @@ a {
   margin-left: 85.10638%;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 48em) {
   .section_nav {
     margin-left: 76.59574%;
   }
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 20em) {
   .section_nav {
     margin-left: 59.57447%;
     width: 40.42553%;
@@ -1294,7 +1294,7 @@ a {
   opacity: 0;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 48em) {
   .tags {
     margin-top: 160px;
     margin-bottom: 80px;
@@ -1306,13 +1306,13 @@ a {
   opacity: 1;
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 20em) {
   .tags.active {
     display: none;
   }
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 20em) {
   .tags {
     display: none;
   }
@@ -1343,7 +1343,7 @@ a {
   color: #fff;
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 20em) {
   .prod_page h2 {
     font-size: 1.5em;
   }
@@ -1353,7 +1353,7 @@ a {
   margin-bottom: 200px;
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 20em) {
   .prod_page .contact {
     margin-top: -112px;
   }
@@ -1367,13 +1367,13 @@ a {
   margin-top: -35px;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 48em) {
   .prod_page .outline_block_heading {
     margin-top: -135px;
   }
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 20em) {
   .prod_page .outline_block_heading {
     margin-top: 0px;
   }
@@ -1390,7 +1390,7 @@ a {
   opacity: 1;
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 20em) {
   .prod_page .outline_block_heading h3 {
     display: none;
   }
@@ -1407,7 +1407,7 @@ a {
   opacity: 1;
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 20em) {
   .prod_page .outline_block_heading h3 {
     display: none;
   }
@@ -1417,7 +1417,7 @@ a {
   margin-top: -83px;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 48em) {
   .prod_page .outline_block {
     margin-top: -98px;
   }
@@ -1431,14 +1431,14 @@ a {
   line-height: 1.7;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 48em) {
   .prod_page .outline_block p {
     margin-top: 28px;
     margin-bottom: 50px;
   }
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 20em) {
   .prod_page .outline_block p {
     width: 100%;
     float: left;
@@ -1466,7 +1466,7 @@ a {
   margin-bottom: 55px;
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 20em) {
   .prod_desc h3 {
     width: 100%;
     float: left;
@@ -1492,7 +1492,7 @@ a {
   margin-bottom: 113px;
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 20em) {
   .prod_desc p {
     width: 100%;
     float: left;
@@ -1519,13 +1519,13 @@ a {
   margin-bottom: 77px;
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 20em) {
   .prod_img img {
     margin-top: 0;
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 48em) {
   .controls_wrap {
     display: none;
   }
@@ -1544,7 +1544,7 @@ a {
   padding-bottom: 85px;
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 20em) {
   .footer {
     padding-bottom: 0;
   }
@@ -1556,7 +1556,7 @@ a {
   line-height: 1.7;
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 20em) {
   .footer .address {
     width: 82.97872%;
     float: left;
@@ -1592,7 +1592,7 @@ a {
           animation-delay: .5s;
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 20em) {
   .prod_page_wrap h2,
   .about_page_wrap h2 {
     width: 100%;
@@ -1612,7 +1612,7 @@ a {
   padding-top: 367px;
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 20em) {
   .prod_page_wrap .hero_img,
   .about_page_wrap .hero_img {
     padding-top: 10px;
@@ -1634,7 +1634,7 @@ a {
   margin-bottom: 80px;
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 20em) {
   .prod_page_wrap .hero_img p,
   .about_page_wrap .hero_img p {
     width: 100%;
@@ -1652,7 +1652,7 @@ a {
   margin-bottom: 271px;
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 20em) {
   .about_text {
     padding-top: 28px;
     margin-bottom: 0px;
@@ -1665,7 +1665,7 @@ a {
   margin-bottom: 115px;
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 20em) {
   .about_text h3 {
     width: 100%;
     float: left;
@@ -1684,7 +1684,7 @@ a {
   margin-bottom: 138px;
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 20em) {
   .about_text p {
     width: 100%;
     float: left;
@@ -1701,7 +1701,7 @@ a {
   top: 313px;
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 20em) {
   .about_text .about_img {
     position: relative;
     top: -260px;
@@ -1713,7 +1713,7 @@ a {
   margin-bottom: 156px;
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 20em) {
   .team {
     margin-bottom: 0;
   }
@@ -1726,7 +1726,7 @@ a {
   margin-bottom: 132px;
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 20em) {
   .team h3 {
     width: 100%;
     float: left;
@@ -1741,7 +1741,7 @@ a {
   text-align: center;
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 20em) {
   .team_members {
     width: 100%;
     float: left;
@@ -1759,7 +1759,7 @@ a {
   margin: 0 auto 58px auto;
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 20em) {
   .team_members .circle {
     width: 90px;
     height: 90px;
@@ -1773,7 +1773,7 @@ a {
   color: #8A8A8B;
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 20em) {
   .team_members p {
     font-size: 0.7em;
     width: 65.95745%;
@@ -1788,7 +1788,7 @@ a {
   margin-right: 0;
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 20em) {
   .team_members:last-of-type {
     width: 100%;
     float: left;
@@ -1805,7 +1805,7 @@ a {
   margin-bottom: 82px;
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 20em) {
   .map {
     padding-top: 70px;
     padding-bottom: 70px;
@@ -1820,7 +1820,7 @@ a {
   margin-bottom: 79px;
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 20em) {
   .map_heading {
     width: 100%;
     float: left;
@@ -1834,7 +1834,7 @@ a {
   padding-left: 28px;
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 20em) {
   .contact_item {
     width: 100%;
     float: left;
@@ -1849,7 +1849,7 @@ a {
   color: #8A8A8B;
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 20em) {
   .contact_item span, .contact_item a {
     font-size: 0.7em;
   }
@@ -1905,7 +1905,7 @@ a {
   margin-right: 0;
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 20em) {
   .contact_item:last-of-type {
     width: 100%;
     float: left;
