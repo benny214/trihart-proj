@@ -448,7 +448,11 @@ a {
 .logo_bg {
   position: absolute;
   right: 0;
-  height: 100vh;
+  height: 100%;
+  width: 56em;
+  background: url("../img/logo-bg.png");
+  background-size: cover;
+  z-index: -1;
 }
 
 .overlay {
