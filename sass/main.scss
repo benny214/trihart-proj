@@ -554,6 +554,9 @@ a {
     display: block;
     width: 100%;
     margin-top: 52px;
+    @media screen and (max-width: 768px){
+    line-height: 1;
+  }
 
     &::-webkit-input-placeholder {
       line-height: 1;
@@ -591,7 +594,7 @@ a {
   }
   li {
     display: inline-block;
-    margin-right: 76.76px;
+    margin-right: 41.76px;
     
     &:last-of-type {
       margin-right: 0;
@@ -601,7 +604,11 @@ a {
 }
 
 .textarea_wrap {
-  margin-bottom: 63px;
+  margin-bottom: 64px;
+   @media screen and (max-width: 768px){
+    @include span(12);
+    margin-bottom: 64px;
+  }
 }
 
 .textbox {

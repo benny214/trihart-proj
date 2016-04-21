@@ -600,6 +600,12 @@ a {
   margin-top: 52px;
 }
 
+@media screen and (max-width: 768px) {
+  .outline_block textarea {
+    line-height: 1;
+  }
+}
+
 .outline_block textarea::-webkit-input-placeholder {
   line-height: 1;
   opacity: 1;
@@ -640,7 +646,7 @@ a {
 
 .form_inputs li {
   display: inline-block;
-  margin-right: 76.76px;
+  margin-right: 41.76px;
 }
 
 .form_inputs li:last-of-type {
@@ -648,7 +654,17 @@ a {
 }
 
 .textarea_wrap {
-  margin-bottom: 63px;
+  margin-bottom: 64px;
+}
+
+@media screen and (max-width: 768px) {
+  .textarea_wrap {
+    width: 100%;
+    float: left;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 64px;
+  }
 }
 
 .textbox {
