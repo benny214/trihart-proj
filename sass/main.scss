@@ -365,6 +365,11 @@ a {
 .nav_btn {
   border: none;
   background-color: rgba(0, 0, 0, 0);
+  img{
+    @media screen and (min-width: 300px) and (max-width: 767px) {
+    transform: scale(2);
+  }
+  }
 }
 
 .header {
