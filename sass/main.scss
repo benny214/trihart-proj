@@ -355,6 +355,13 @@ a {
   overflow: hidden;
   top: 0;
   left: 0;
+  @media screen and (min-width: 768px) and (max-width: 1024px) {
+    display: none;
+  }
+
+  @media screen and (min-width: 300px) and (max-width: 767px) {
+   display: none;
+  }
 }
 
 .toggle_nav,
@@ -380,7 +387,6 @@ a {
   z-index: 9;
 }
 
-
 .main {
   padding-top: 250px;
   bottom: 0;
@@ -393,19 +399,19 @@ a {
     padding-top: 62px;
   }
 
-.grid_opn{
-  top: 0;
-    right: -203px;
-    float: right;
-    @media screen and (max-width: 1024px) and (min-width: 768px){
-      right: 16px;
-    }
-    @media screen and (max-width: 767px) and (min-width: 300px){
-      right: 16px;
-      top: 0;
-      float: right;
-    }
-}
+  // .grid_opn{
+  //   top: 0;
+  //     right: -203px;
+  //     float: right;
+  //     @media screen and (max-width: 1024px) and (min-width: 768px){
+  //       right: 16px;
+  //     }
+  //     @media screen and (max-width: 767px) and (min-width: 300px){
+  //       right: 16px;
+  //       top: 0;
+  //       float: right;
+  //     }
+  // }
 
   h1 {
     margin-bottom: 153px;
@@ -468,12 +474,14 @@ a {
     -webkit-transform: translateY(0);
     transform: translateY(0);
   }
+
   40% {
     -moz-transform: translateY(-30px);
     -ms-transform: translateY(-30px);
     -webkit-transform: translateY(-30px);
     transform: translateY(-30px);
   }
+
   60% {
     -moz-transform: translateY(-15px);
     -ms-transform: translateY(-15px);
@@ -909,22 +917,28 @@ a {
 }
 
 .grid_opn {
+  position: absolute;
   top: 205px;
-  right: -203px;
-  float: right;
+  right: 17px;
 
   @media screen and (max-width: 1024px) {
     right: 0;
   }
 
   @media screen and (min-width: 768px) and (max-width: 1024px) {
-    top: 125px;
-    right: 20px;
+    top: 187px;
+    right: 0;
   }
 
   @media screen and (min-width: 300px) and (max-width: 767px) {
     top: 62px;
-    right: 0px;
+    right: 0;
+  }
+}
+
+#section1 {
+  .grid_opn {
+    top: 0;
   }
 }
 
@@ -932,10 +946,11 @@ a {
   position: fixed;
   height: 100%;
   top: 0;
-  right: -90%;
-  width: 82%;
+  right: -100%;
+  width: 100%;
   background-color: #151517;
-  box-shadow: -20px 0 30px 0 rgba(0, 0, 0, 0.5);
+
+  // box-shadow: -20px 0 30px 0 rgba(0, 0, 0, 0.5);
   padding-top: 25px;
 }
 
@@ -1119,20 +1134,20 @@ a {
 .page_number {
   position: relative;
   top: 205px;
-  left: -205px;
+  left: -17px;
 
   @media screen and (max-width: 1024px) {
     left: 0;
   }
 
   @media screen and (min-width: 768px) and (max-width: 1024px) {
-    top: 125px;
-    left: 20px;
+    top: 187px;
+    left: -17px;
   }
 
   @media screen and (min-width: 300px) and (max-width: 767px) {
     top: 63px;
-    left: 0;
+    left: -17px;
   }
 
   span {

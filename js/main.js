@@ -72,7 +72,7 @@ $(document).ready(function() {
   });
   
   $('.grid_close').click(function() {
-    $('.grid_nav').animate({right: '-90%'}, 300);
+    $('.grid_nav').animate({right: '-100%'}, 300);
     $('.grid_nav').removeClass('open');
   });
 
