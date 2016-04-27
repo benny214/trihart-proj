@@ -76,6 +76,18 @@ $(document).ready(function() {
     $('.grid_nav').removeClass('open');
   });
 
+  //slick carousel
+  $('.carousel').slick({
+  dots: false,
+  infinite: true,
+  speed: 300,
+  slidesToShow: 1,
+  centerMode: true,
+  variableWidth: true,
+  autoplay: true,
+  arrows: false
+});
+
 });
 
 $(window).load(function() {

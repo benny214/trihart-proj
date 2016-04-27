@@ -685,7 +685,11 @@ a {
     }
   }
 }
-
+.col-10.form_heading.outline_block_heading{
+  @media screen and (min-width: 768px) and (max-width: 1024px){
+    @include span(12);
+  }
+}
 .checks {
   margin-bottom: 26px;
 
@@ -1200,7 +1204,7 @@ ul.col-10.form_inputs {
 }
 
 .tags {
-  @include push(8);
+  @include push(6);
 
   color: #fff;
   font-weight: 100;
@@ -1210,6 +1214,7 @@ ul.col-10.form_inputs {
   margin-bottom: 115px;
   animation-delay: 1.5s;
   opacity: 0;
+  text-align: right;
 
   @media screen and (min-width: 768px) and (max-width: 1024px) {
     margin-top: 160px;
@@ -1234,8 +1239,8 @@ ul.col-10.form_inputs {
 .tag {
   display: block;
 
-  &:nth-of-type(even) {
-    padding-left: 60px;
+  &:nth-of-type(odd) {
+    padding-right: 60px;
   }
 }
 
@@ -1336,7 +1341,7 @@ ul.col-10.form_inputs {
 
     font-size: em(28);
     line-height: 1.3;
-    margin-bottom: 55px;
+    margin-bottom: 35px;
 
     @media screen and (min-width: 300px) and (max-width: 767px) {
       @include span(12);
@@ -1348,8 +1353,8 @@ ul.col-10.form_inputs {
   p {
     @include span(12);
 
-    column-count: 2;
-    column-gap: 20px;
+    // column-count: 2;
+    // column-gap: 20px;
     font-size: em(18);
     line-height: 1.7;
     margin-bottom: 113px;
@@ -1367,15 +1372,14 @@ ul.col-10.form_inputs {
 
 .prod_img {
   animation-delay: .5s;
-
-  img {
-    margin-top: -225px;
+  margin-top: -225px;
     margin-bottom: 77px;
+
+    
 
     @media screen and (min-width: 300px) and (max-width: 767px) {
       margin-top: 0;
     }
-  }
 }
 
 .controls_wrap {
@@ -1686,4 +1690,8 @@ ul.col-10.form_inputs {
       @include span(12);
     }
   }
+}
+
+.slick-initialized .slick-slide{
+  margin-right: 20px;
 }
