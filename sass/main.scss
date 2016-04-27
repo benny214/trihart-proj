@@ -622,7 +622,8 @@ a {
     @include span(8);
 
     margin-top: -29px;
-    &.outline_block_heading{
+
+    &.outline_block_heading {
       @media screen and (min-width: 768px) and (max-width: 1024px) {
         margin-top: 29px;
       }
@@ -685,11 +686,13 @@ a {
     }
   }
 }
-.col-10.form_heading.outline_block_heading{
-  @media screen and (min-width: 768px) and (max-width: 1024px){
+
+.col-10.form_heading.outline_block_heading {
+  @media screen and (min-width: 768px) and (max-width: 1024px) {
     @include span(12);
   }
 }
+
 .checks {
   margin-bottom: 26px;
 
@@ -1309,7 +1312,6 @@ ul.col-10.form_inputs {
     p {
       @include push(3);
 
-      margin-top: 63px;
       margin-bottom: 80px;
       font-size: em(18);
       line-height: 1.7;
@@ -1373,13 +1375,11 @@ ul.col-10.form_inputs {
 .prod_img {
   animation-delay: .5s;
   margin-top: -225px;
-    margin-bottom: 77px;
+  margin-bottom: 77px;
 
-    
-
-    @media screen and (min-width: 300px) and (max-width: 767px) {
-      margin-top: 0;
-    }
+  @media screen and (min-width: 300px) and (max-width: 767px) {
+    margin-top: 0;
+  }
 }
 
 .controls_wrap {
@@ -1692,6 +1692,14 @@ ul.col-10.form_inputs {
   }
 }
 
-.slick-initialized .slick-slide{
+.slick-initialized .slick-slide {
   margin-right: 20px;
+}
+
+.links {
+  margin-bottom: 50px;
+
+  a {
+    margin-right: 20px;
+  }
 }

@@ -1448,7 +1448,6 @@ ul.col-10.form_inputs li:last-of-type {
 
 .prod_page .outline_block p {
   margin-left: 25.53191%;
-  margin-top: 63px;
   margin-bottom: 80px;
   font-size: 1.125em;
   line-height: 1.7;
@@ -1929,5 +1928,13 @@ ul.col-10.form_inputs li:last-of-type {
 }
 
 .slick-initialized .slick-slide {
+  margin-right: 20px;
+}
+
+.links {
+  margin-bottom: 50px;
+}
+
+.links a {
   margin-right: 20px;
 }
