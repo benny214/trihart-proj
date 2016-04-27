@@ -1422,7 +1422,7 @@ ul.col-10.form_inputs {
 
   @include span(last 1);
 
-  padding-top: 17px;
+  padding-top: 33px;
 }
 
 .prod_page_wrap,
@@ -1702,4 +1702,8 @@ ul.col-10.form_inputs {
   a {
     margin-right: 20px;
   }
+}
+
+.made_in_ny{
+  text-align: center;
 }

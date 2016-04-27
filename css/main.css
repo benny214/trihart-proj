@@ -1583,7 +1583,7 @@ ul.col-10.form_inputs li:last-of-type {
   width: 6.38298%;
   float: right;
   margin-right: 0;
-  padding-top: 17px;
+  padding-top: 33px;
 }
 
 .prod_page_wrap .header,
@@ -1937,4 +1937,8 @@ ul.col-10.form_inputs li:last-of-type {
 
 .links a {
   margin-right: 20px;
+}
+
+.made_in_ny {
+  text-align: center;
 }
