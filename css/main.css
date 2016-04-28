@@ -1478,9 +1478,10 @@ ul.col-10.form_inputs li:last-of-type {
 }
 
 .prod_desc h3 {
-  width: 74.46809%;
+  width: 100%;
   float: left;
-  margin-right: 2.12766%;
+  margin-left: 0;
+  margin-right: 0;
   font-size: 1.75em;
   line-height: 1.3;
   margin-bottom: 35px;
