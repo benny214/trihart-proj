@@ -1102,7 +1102,7 @@ ul.col-10.form_inputs {
   p {
     opacity: 0;
 
-    @include span(6);
+    // @include span(6);
 
     font-size: em(18);
     line-height: 1.7;
@@ -1241,6 +1241,7 @@ ul.col-10.form_inputs {
 
 .tag {
   display: block;
+  text-transform: uppercase;
 
   &:nth-of-type(odd) {
     padding-right: 60px;
