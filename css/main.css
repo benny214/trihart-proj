@@ -445,6 +445,7 @@ a {
 @media screen and (min-width: 768px) and (max-width: 1024px) {
   .main h1 {
     margin-bottom: 70px;
+    font-size: 2.5em;
   }
 }
 
@@ -813,8 +814,9 @@ a {
 }
 
 ul.col-10.form_inputs li {
-  display: inline-block;
-  margin-right: 41.76px;
+  width: 31.91489%;
+  float: left;
+  margin-right: 2.12766%;
 }
 
 ul.col-10.form_inputs li:last-of-type {
@@ -1186,6 +1188,7 @@ ul.col-10.form_inputs li:last-of-type {
     width: 65.95745%;
     float: left;
     margin-right: 2.12766%;
+    font-size: 2em;
   }
 }
 
@@ -1219,6 +1222,12 @@ ul.col-10.form_inputs li:last-of-type {
           animation-delay: .5s;
 }
 
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .section p {
+    font-size: 0.9em;
+  }
+}
+
 @media screen and (min-width: 300px) and (max-width: 767px) {
   .section p {
     font-size: 0.7em;
@@ -1231,15 +1240,9 @@ ul.col-10.form_inputs li:last-of-type {
   left: -17px;
 }
 
-@media screen and (max-width: 1024px) {
-  .page_number {
-    left: 0;
-  }
-}
-
 @media screen and (min-width: 768px) and (max-width: 1024px) {
   .page_number {
-    top: 187px;
+    top: 117px;
     left: -17px;
   }
 }
@@ -1344,8 +1347,9 @@ ul.col-10.form_inputs li:last-of-type {
 
 @media screen and (min-width: 768px) and (max-width: 1024px) {
   .tags {
-    margin-top: 160px;
-    margin-bottom: 80px;
+    margin-top: 120px;
+    margin-bottom: 40px !important;
+    font-size: 0.9em;
     margin-left: 59.57447%;
   }
 }
