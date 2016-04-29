@@ -657,7 +657,7 @@ a {
 @media screen and (min-width: 300px) and (max-width: 767px) {
   .outline_block_heading h3 {
     font-size: 1em;
-    margin-bottom: 16px;
+    margin-bottom: 32px;
   }
 }
 
@@ -685,6 +685,12 @@ a {
   float: left;
   margin-right: 2.12766%;
   margin-top: -29px;
+}
+
+@media screen and (min-width: 300px) and (max-width: 767px) {
+  .outline_block .col-10 {
+    margin-top: 0;
+  }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1024px) {
@@ -819,6 +825,14 @@ ul.col-10.form_inputs li {
   margin-right: 2.12766%;
 }
 
+@media screen and (min-width: 300px) and (max-width: 767px) {
+  ul.col-10.form_inputs li {
+    width: 57.44681%;
+    float: left;
+    margin-right: 2.12766%;
+  }
+}
+
 ul.col-10.form_inputs li:last-of-type {
   margin-right: 0;
 }
@@ -935,6 +949,12 @@ ul.col-10.form_inputs li:last-of-type {
           transition: all 0.3s ease-in;
 }
 
+@media screen and (min-width: 300px) and (max-width: 767px) {
+  .outline_block_btn {
+    margin-top: 15px;
+  }
+}
+
 .checkbox:not(checked) {
   position: absolute;
   opacity: 0;
@@ -980,6 +1000,12 @@ ul.col-10.form_inputs li:last-of-type {
 
 .social__list {
   text-align: center;
+}
+
+@media screen and (min-width: 300px) and (max-width: 767px) {
+  .social__list {
+    margin-top: 15px;
+  }
 }
 
 .social__item {
@@ -1266,6 +1292,16 @@ ul.col-10.form_inputs li:last-of-type {
   letter-spacing: 3px;
 }
 
+.section2 .page_number {
+  top: 170px;
+}
+
+@media screen and (max-width: 767px) and (min-width: 300px) {
+  .section2 .page_number {
+    top: 93px;
+  }
+}
+
 .prod_bg {
   padding-bottom: 300px;
   background-attachment: fixed;
@@ -1347,7 +1383,7 @@ ul.col-10.form_inputs li:last-of-type {
 
 @media screen and (min-width: 768px) and (max-width: 1024px) {
   .tags {
-    margin-top: 120px;
+    margin-top: 130px;
     margin-bottom: 40px !important;
     font-size: 0.9em;
     margin-left: 59.57447%;
@@ -1439,7 +1475,7 @@ ul.col-10.form_inputs li:last-of-type {
 @media screen and (min-width: 768px) and (max-width: 1024px) {
   .prod_page .outline_block_heading h3 {
     margin-top: 16px;
-    margin-bottom: 32px;
+    margin-bottom: 13px;
   }
 }
 
@@ -1703,6 +1739,7 @@ ul.col-10.form_inputs li:last-of-type {
     margin-right: 0;
     font-size: 0.7em;
     margin-bottom: 38px;
+    margin-top: 37px;
   }
 }
 
@@ -1715,7 +1752,7 @@ ul.col-10.form_inputs li:last-of-type {
 @media screen and (min-width: 300px) and (max-width: 767px) {
   .about_text .about_img {
     position: relative;
-    top: -260px;
+    top: -289px;
     left: 21%;
   }
 }
