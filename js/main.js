@@ -67,12 +67,12 @@ $(document).ready(function() {
 
     // Nav Side-Slide
   $('.grid_opn').click(function() {
-    $('.grid_nav').animate({right: '0'}, 300);
+    $('.grid_nav').animate({top: '0'}, 500);
     $('.grid_nav').addClass('open');
   });
   
   $('.grid_close').click(function() {
-    $('.grid_nav').animate({right: '-100%'}, 300);
+    $('.grid_nav').animate({top: '-100%'}, 500);
     $('.grid_nav').removeClass('open');
   });
 

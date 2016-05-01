@@ -1033,41 +1033,15 @@ ul.col-10.form_inputs li:last-of-type {
   fill: #3B5998;
 }
 
-.grid_opn {
-  position: absolute;
-  top: 205px;
-  right: 17px;
-}
-
-@media screen and (max-width: 1024px) {
-  .grid_opn {
-    right: 0;
-  }
-}
-
-@media screen and (min-width: 768px) and (max-width: 1024px) {
-  .grid_opn {
-    top: 187px;
-    right: 0;
-  }
-}
-
-@media screen and (min-width: 300px) and (max-width: 767px) {
-  .grid_opn {
-    top: 62px;
-    right: 0;
-  }
-}
-
-#section1 .grid_opn {
-  top: 0;
+.grid_opn_wrap {
+  text-align: center;
+  padding-top: 7px;
 }
 
 .grid_nav {
   position: fixed;
   height: 100%;
-  top: 0;
-  right: -100%;
+  top: -100%;
   width: 100%;
   background-color: #151517;
   padding-top: 25px;
@@ -1803,8 +1777,13 @@ ul.col-10.form_inputs li:last-of-type {
   width: 180px;
   height: 180px;
   border-radius: 50%;
-  border: 1px solid #232325;
+  border: 3px solid #2C2C2E;
   margin: 0 auto 58px auto;
+  text-align: center;
+}
+
+.team_members .circle img {
+  vertical-align: middle;
 }
 
 @media screen and (min-width: 300px) and (max-width: 767px) {
@@ -1813,6 +1792,12 @@ ul.col-10.form_inputs li:last-of-type {
     height: 90px;
     float: left;
   }
+}
+
+.team_members .helper {
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
 }
 
 .team_members p {
@@ -1976,10 +1961,6 @@ ul.col-10.form_inputs li:last-of-type {
 
 .made_in_ny {
   text-align: center;
-}
-
-.about_logo_wrap {
-  height: 72px;
 }
 
 .port_item_cont {
