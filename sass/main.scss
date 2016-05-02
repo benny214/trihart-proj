@@ -551,7 +551,8 @@ a {
 }
 
 .navigation {
-  @include push(5);
+  // @include push(5);
+  text-align: center;
 
   margin-bottom: 50px;
 
