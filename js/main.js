@@ -1,6 +1,9 @@
 $(document).ready(function() {
 
-
+//mixItUp
+$(function(){
+  $('.prod_list').mixItUp();
+});
 
 //fullpage scroll
   $('#fullpage').fullpage({
@@ -49,9 +52,7 @@ $(document).ready(function() {
       }
     }
   });
-  $(document).on('click', '#moveDown', function(){
-    $.fn.fullpage.moveSectionDown();
-  });
+
 
 //fullpage menu
   $('#toggle').click(function() {
@@ -76,6 +77,7 @@ $(document).ready(function() {
     $('.grid_nav').removeClass('open');
   });
 
+
   //slick carousel
   $('.carousel').slick({
   dots: false,
@@ -88,7 +90,12 @@ $(document).ready(function() {
   arrows: false
 });
 
+
 });
+
+  $(document).on('click', '#moveDown', function(){
+    $.fn.fullpage.moveSectionDown();
+  });
 
 $(window).load(function() {
 

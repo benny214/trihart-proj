@@ -49,7 +49,7 @@
           </a>
         </div>
         <div class="col-9 grid_opn_wrap">
-          <a href="#" class="grid_opn">
+          <a href="#" class="grid_opn rotate">
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16">
               <path fill="#FFF" fill-rule="evenodd" d="M10 10h6v6h-6zM0 10h6v6H0zM10 0h6v6h-6zM0 0h6v6H0z"/>
             </svg>
@@ -160,10 +160,10 @@
       </nav>
       <nav class="grid_nav">
         <ul class="sorting_list">
-          <li class="sorting_item"><a href="#" class="active">All</a></li>
-          <li class="sorting_item"><a href="#">Web</a></li>
-          <li class="sorting_item"><a href="#">Mobile</a></li>
-          <li class="sorting_item"><a href="#">Identity</a></li>
+          <li class="sorting_item"><a href="#" class="filter" data-filter="all">All</a></li>
+          <li class="sorting_item"><a href="#" class="filter" data-filter=".category-1">Web</a></li>
+          <li class="sorting_item"><a href="#" class="filter" data-filter=".category-2">Mobile</a></li>
+          <li class="sorting_item"><a href="#" class="filter" data-filter=".category-3">Identity</a></li>
           <li class="sorting_item grid_close"><a href="#">
             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20">
               <g fill="#FFF" fill-rule="evenodd">
@@ -175,7 +175,7 @@
         </li>
       </ul>
       <ul class="prod_list">
-        <li class="prod_item">
+        <li class="prod_item mix category-1" >
           <div style="background-image: url('img/gavigan-mini.jpg');
             background-repeat: no-repeat;">
             <span class="port_item_cont">
@@ -184,7 +184,7 @@
             </span>
           </div>
         </li>
-        <li class="prod_item">
+        <li class="prod_item mix category-2" >
           <div style="background-image: url('img/purple_ocean_mini.jpg');
             background-repeat: no-repeat;">
             <span class="port_item_cont">
@@ -193,7 +193,7 @@
             </span>
           </div>
         </li>
-        <li class="prod_item">
+        <li class="prod_item mix category-1" >
           <div style="background-image: url('img/scoop-mini.jpg');
             background-repeat: no-repeat;">
             <span class="port_item_cont">
@@ -202,7 +202,7 @@
             </span>
           </div>
         </li>
-        <li class="prod_item">
+        <li class="prod_item mix category-2" >
           <div style="background-image: url('img/voyzer-mini.jpg');
             background-repeat: no-repeat;">
             <span class="port_item_cont">
@@ -211,7 +211,7 @@
             </span>
           </div>
         </li>
-        <li class="prod_item">
+        <li class="prod_item mix category-3" >
           <div style="background-image: url('img/burberry-mini.jpg');
             background-repeat: no-repeat;">
             <span class="port_item_cont">
@@ -279,7 +279,7 @@
           <span class="tag">Photography</span>
         </div>
         <h2 class="col-6">Mignonne Gavigan</h2>
-        <p class="col-10">Mignonne is very excited to launch a new company that will sell her designs (both old and new) under her original Mignonne Gavigan brand name. With a fresh new vision and the breadth of experience she has gained over her decade in fashion, Mignonne will continue to create stunning pieces that enhance even the most collected closet. </p>
+        <p class="col-8">Mignonne is very excited to launch a new company that will sell her designs (both old and new) under her original Mignonne Gavigan brand name. With a fresh new vision and the breadth of experience she has gained over her decade in fashion, Mignonne will continue to create stunning pieces that enhance even the most collected closet. </p>
       </div>
       <div class="container">
         <ul class="section_nav">
@@ -469,6 +469,7 @@
     <script src="js/vendor/animate/animate-css.js"></script>
     <script src="libs/fullPagae/jquery.fullPage.min.js"></script>
     <script src="libs/animBg/animBg.js"></script>
+    <script src="http://cdn.jsdelivr.net/jquery.mixitup/latest/jquery.mixitup.min.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>
