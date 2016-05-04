@@ -896,26 +896,37 @@ ul.col-10.form_inputs {
 .social__item {
   display: inline-block;
   margin-right: 10px;
+  width: 37px;
+  height: 37px;
+  transition: all .5s;
+  border: 1px solid #161618;
 
   &:last-of-type {
     margin-right: 0;
   }
-
-  svg {
-    fill: none;
-
-    &.tw:hover {
-      fill: #1DA1F2;
-    }
-
-    &.in:hover {
-      fill: #0177B5;
-    }
-
-    &.fb:hover {
-      fill: #3B5998;
-    }
+  &:hover{
+    border: 1px solid #fff;
+    border-radius: 50%;
   }
+
+  // svg {
+  //   fill: none;
+
+  //   &.tw{
+  //     transition: all .5s;
+  //   }
+    
+
+  //   &.in{
+  //     transition: all .5s;
+  //   }
+    
+
+  //   &.fb{
+  //     transition: all .5s;
+  //   }
+
+  // }
 }
 
 // .grid_opn {
@@ -1230,9 +1241,10 @@ ul.col-10.form_inputs {
     transform-origin: 100% 0;
     margin-left: 46px;
     transition: all 0.5s;
+    transform: scale(1);
 
     &:hover {
-      transform: scale(1.5);
+      transform: scale(1.1);
     }
   }
 }
@@ -1296,10 +1308,10 @@ ul.col-10.form_inputs {
   svg {
     vertical-align: middle;
     position: absolute;
-      right: 0;
+    right: 0;
   }
 
-  .hover_cont{
+  .hover_cont {
     left: 32px;
   }
 
@@ -1311,11 +1323,8 @@ ul.col-10.form_inputs {
     border-bottom-right-radius: 38px 31px;
 
     svg {
-      
-
       + .hover_cont {
         opacity: 1;
-        
       }
     }
   }
@@ -1336,7 +1345,7 @@ ul.col-10.form_inputs {
     vertical-align: middle;
   }
 
-  .hover_cont{
+  .hover_cont {
     left: 69px;
   }
 
@@ -1349,7 +1358,6 @@ ul.col-10.form_inputs {
 
     svg + .hover_cont {
       opacity: 1;
-      
     }
   }
 }
