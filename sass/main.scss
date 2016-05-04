@@ -1284,26 +1284,85 @@ ul.col-10.form_inputs {
 .next {
   position: absolute;
   width: 41px;
+  width: 41px;
   height: 41px;
   top: 32px;
   right: -205px;
   border: 1px solid #222;
   border-radius: 50%;
   color: #000;
+  transition: all .5s;
+
+  svg {
+    vertical-align: middle;
+    position: absolute;
+      right: 0;
+  }
+
+  .hover_cont{
+    left: 32px;
+  }
+
+  &:hover {
+    width: 170px;
+    border-top-left-radius: 38px 31px;
+    border-bottom-left-radius: 38px 31px;
+    border-top-right-radius: 38px 31px;
+    border-bottom-right-radius: 38px 31px;
+
+    svg {
+      
+
+      + .hover_cont {
+        opacity: 1;
+        
+      }
+    }
+  }
 }
 
 .prev {
   position: absolute;
-  width: 170px;
+  width: 41px;
   height: 41px;
   top: 32px;
   left: -205px;
   border: 1px solid #222;
-  border-top-left-radius: 40px 30px;
-  border-bottom-left-radius: 40px 30px;
-  border-top-right-radius: 40px 30px;
-  border-bottom-right-radius: 40px 30px;
+  border-radius: 50%;
   color: #000;
+  transition: all .5s;
+
+  svg {
+    vertical-align: middle;
+  }
+
+  .hover_cont{
+    left: 69px;
+  }
+
+  &:hover {
+    width: 170px;
+    border-top-left-radius: 38px 31px;
+    border-bottom-left-radius: 38px 31px;
+    border-top-right-radius: 38px 31px;
+    border-bottom-right-radius: 38px 31px;
+
+    svg + .hover_cont {
+      opacity: 1;
+      
+    }
+  }
+}
+
+.hover_cont {
+  position: absolute;
+  top: 9px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  transition: all .5s;
+  opacity: 0;
 }
 
 .prod_page {
