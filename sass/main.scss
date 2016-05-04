@@ -1382,10 +1382,12 @@ ul.col-10.form_inputs {
   }
 
   p {
+    // @include span(6);
+    // @include push(1);
     @include span(12);
 
-    // column-count: 2;
-    // column-gap: 20px;
+    column-count: 2;
+    column-gap: 20px;
     font-size: em(18);
     line-height: 1.7;
     margin-bottom: 113px;
