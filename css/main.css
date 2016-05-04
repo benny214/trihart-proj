@@ -710,7 +710,6 @@ a {
 
 .outline_block label {
   color: #fff;
-  margin-right: 57px;
   font-size: 1.125em;
 }
 
@@ -799,6 +798,7 @@ a {
 
 .check_wrap {
   display: inline-block;
+  margin-right: 57px;
 }
 
 @media screen and (min-width: 300px) and (max-width: 767px) {
@@ -808,6 +808,10 @@ a {
     margin-left: 0;
     margin-right: 0;
   }
+}
+
+.check_wrap:last-of-type {
+  margin-right: 0;
 }
 
 @media screen and (min-width: 768px) and (max-width: 1024px) {
@@ -955,19 +959,7 @@ ul.col-10.form_inputs li:last-of-type {
   }
 }
 
-.checkbox:not(checked) {
-  position: absolute;
-  opacity: 0;
-}
-
-.checkbox:not(checked) + label {
-  position: relative;
-  padding: 0;
-  cursor: pointer;
-}
-
-.checkbox:not(checked) + label:before {
-  content: '';
+.circle-empty {
   display: inline-block;
   margin-right: 4px;
   width: 12px;
@@ -976,26 +968,22 @@ ul.col-10.form_inputs li:last-of-type {
   border: 1px solid #fff;
 }
 
-.checkbox:not(checked) + label:after {
-  content: '';
+.circle {
   position: absolute;
-  top: 11px;
-  left: 3px;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
   width: 6px;
   height: 6px;
   border-radius: 50%;
   background: #3E62E0;
-  opacity: 0;
+  display: none;
 }
 
-@media screen and (min-width: 300px) and (max-width: 767px) {
-  .checkbox:not(checked) + label:after {
-    top: 3px;
-  }
-}
-
-.checkbox:checked + label:after {
-  opacity: 1;
+.checkbox:checked + label .circle {
+  display: block;
 }
 
 .social__list {
