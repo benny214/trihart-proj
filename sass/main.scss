@@ -1475,8 +1475,10 @@ ul.col-10.form_inputs {
     column-gap: 20px;
     font-size: em(18);
     line-height: 1.7;
+    margin-bottom: 50px;
+    &:last-of-type{
     margin-bottom: 113px;
-
+}
     @media screen and (min-width: 300px) and (max-width: 767px) {
       @include span(12);
 

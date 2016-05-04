@@ -1575,6 +1575,10 @@ ul.col-10.form_inputs li:last-of-type {
           column-gap: 20px;
   font-size: 1.125em;
   line-height: 1.7;
+  margin-bottom: 50px;
+}
+
+.prod_desc p:last-of-type {
   margin-bottom: 113px;
 }
 
