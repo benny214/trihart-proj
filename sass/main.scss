@@ -720,9 +720,13 @@ a {
 
   @media screen and (min-width: 300px) and (max-width: 767px) {
     @include span(12);
+
+    &:first-of-type {
+      margin-left: 0;
+    }
   }
 
-  &:first-of-type{
+  &:first-of-type {
     margin-left: -5px;
   }
 
@@ -996,7 +1000,8 @@ ul.col-10.form_inputs {
 }
 
 .prod_item {
-  @include span(33.333% no-gutters);
+  width: 33.3333%;
+  float: left;
 
   height: calc(100vh / 3);
 
@@ -1226,7 +1231,8 @@ ul.col-10.form_inputs {
     transform-origin: 100% 0;
     margin-left: 46px;
     transition: all 0.5s;
-    &:hover{
+
+    &:hover {
       transform: scale(1.5);
     }
   }
@@ -1791,9 +1797,9 @@ ul.col-10.form_inputs {
   }
 }
 
-// .mix{
-//   display: none;
-// }
+.mix{
+  display: none;
+}
 
 .rotate {
   svg {

@@ -809,6 +809,9 @@ a {
     margin-left: 0;
     margin-right: 0;
   }
+  .check_wrap:first-of-type {
+    margin-left: 0;
+  }
 }
 
 .check_wrap:first-of-type {
@@ -1086,7 +1089,7 @@ ul.col-10.form_inputs li:last-of-type {
 }
 
 .prod_item {
-  width: 33.333%;
+  width: 33.3333%;
   float: left;
   height: -webkit-calc(100vh / 3);
   height: calc(100vh / 3);
@@ -1991,6 +1994,10 @@ ul.col-10.form_inputs li:last-of-type {
 .port_item_cont a:hover {
   background: #fff;
   color: #222;
+}
+
+.mix {
+  display: none;
 }
 
 .rotate svg {

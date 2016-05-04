@@ -1,10 +1,5 @@
 $(document).ready(function() {
 
-//mixItUp
-$(function(){
-  $('.prod_list').mixItUp();
-});
-
 //fullpage scroll
   $('#fullpage').fullpage({
     verticalCentered: true,
@@ -60,38 +55,38 @@ $(function(){
     $('#overlay').addClass('open');
     $('.animation_wrap').addClass('animated fadeInDown');
   });
+
   $('.close_nav').click(function() {
     $('.animation_wrap').removeClass('animated fadeInDown');
     $('.animation_wrap').addClass('animated fadeOutUp');
     $('#overlay').removeClass('open');
   });
 
-    // Nav Side-Slide
+// Nav Side-Slide
   $('.grid_opn').click(function() {
     $('.grid_nav').animate({top: '0'}, 500);
     $('.grid_nav').addClass('open');
   });
-  
+
   $('.grid_close').click(function() {
     $('.grid_nav').animate({top: '-100%'}, 500);
     $('.grid_nav').removeClass('open');
   });
 
 
-  //slick carousel
-  $('.carousel').slick({
-  dots: false,
-  infinite: true,
-  speed: 300,
-  slidesToShow: 1,
-  centerMode: true,
-  variableWidth: true,
-  autoplay: true,
-  arrows: false
+
+//mixItUp
+
+  $('.prod_list').mixItUp();
+
+  $('.carousel').owlCarousel({
+      loop:true,
+      margin: 20
+    });
+
 });
 
 
-});
 
   $(document).on('click', '#moveDown', function(){
     $.fn.fullpage.moveSectionDown();

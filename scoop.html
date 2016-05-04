@@ -11,8 +11,8 @@
     <link rel="apple-touch-icon" href="apple-touch-icon.png">
     <link rel="stylesheet" href="css/normalize.min.css">
     <link rel="stylesheet" href="js/vendor/animate/animate.min.css">
-    <!--     <link rel="stylesheet" href="js/vendor/fullpage-menu/fullpage-menu.css"> -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.7.9/jquery.fullPage.min.css">
+    <link rel="stylesheet" href="libs/fullPagae/jquery.fullPage.css">
+    <link rel="stylesheet" href="libs/owl.carousel/assets/owl.carousel.css"/>
     <link rel="stylesheet" href="css/main.css">
     <!--[if lt IE 8]>
     <script src="js/vendor/html5shiv/es5-shim.min.js"></script>
@@ -42,138 +42,144 @@
     </div>
     <div class="prod_page_wrap">
       <!-- header start -->
-      <header class="header">
-        <div class="container">
-          <div class="col-2 logo">
-            <a href="http://benny214.github.io/trihart-proj/#">
-              <img src="img/logo.svg" alt="text logo">
-            </a>
-          </div>
-          <div class="col-9 grid_opn_wrap">
-            <a href="#" class="grid_opn">
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16">
-                <path fill="#FFF" fill-rule="evenodd" d="M10 10h6v6h-6zM0 10h6v6H0zM10 0h6v6h-6zM0 0h6v6H0z"/>
-              </svg>
-            </a>
-          </div>
-          <div class="col-1 toggle_nav">
-            <button class="nav_btn" id="toggle">
-            <img src="img/nav.svg" width="30" alt="nav icon">
-            </button>
-          </div>
-          </div><!-- end .container -->
-          <nav class="top_menu overlay" id="overlay">
-            <!-- header -->
-            <div class="container">
-              <div class="col-2 logo">
-                <a href="http://benny214.github.io/trihart-proj/">
-                  <img src="img/logo.svg" alt="text logo">
-                </a>
-              </div>
-              <div class="col-1 close_nav">
-                <a href="#" class="close_nav_btn">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20">
-                    <g fill="#FFF" fill-rule="evenodd">
-                      <path d="M2.12 0L19.8 17.676l-2.122 2.12L0 2.122z"/>
-                      <path d="M0 17.678L17.676 0l2.12 2.12L2.122 19.8z"/>
-                    </g>
-                  </svg>
-                </a>
-              </div>
-              </div><!-- end .container -->
-              <div class="animation_wrap">
-                <!-- navigation links -->
+    <header class="header">
+      <div class="container">
+        <div class="col-2 logo">
+          <a href="http://benny214.github.io/trihart-proj/#">
+            <img src="img/logo.svg">
+          </a>
+        </div>
+        <div class="col-9 grid_opn_wrap">
+          <a href="#" class="grid_opn rotate">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16">
+              <path fill="#FFF" fill-rule="evenodd" d="M10 10h6v6h-6zM0 10h6v6H0zM10 0h6v6h-6zM0 0h6v6H0z"/>
+            </svg>
+          </a>
+        </div>
+        <div class="col-1 toggle_nav">
+          <button class="nav_btn" id="toggle">
+          <img src="img/nav.svg" width="30" alt="nav icon">
+          </button>
+        </div>
+        </div><!-- end .container -->
+        <nav class="top_menu overlay" id="overlay">
+          <!-- header -->
+          <div class="container">
+            <div class="col-2 logo">
+              <a href="http://benny214.github.io/trihart-proj/#">
+                <img src="img/logo.svg" alt="text logo">
+              </a>
+            </div>
+            <div class="col-1 close_nav">
+              <a href="#" class="close_nav_btn">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20">
+                  <g fill="#FFF" fill-rule="evenodd">
+                    <path d="M2.12 0L19.8 17.676l-2.122 2.12L0 2.122z"/>
+                    <path d="M0 17.678L17.676 0l2.12 2.12L2.122 19.8z"/>
+                  </g>
+                </svg>
+              </a>
+            </div>
+            </div><!-- end .container -->
+            <div class="animation_wrap">
+              <!-- navigation links -->
+              <div class="container">
+                <ul class="col-12 navigation">
+                  <li><a href="http://benny214.github.io/trihart-proj/#secondPage">Work</a></li>
+                  <li><a href="about.html">Our Vision</a></li>
+                  <li><a href="about.html">Experiments</a></li>
+                  <li><a href="about.html">Contact</a></li>
+                </ul>
+                </div><!-- end .container -->
+                <!-- form -->
                 <div class="container">
-                  <ul class="col-12 navigation">
-                    <li><a href="http://benny214.github.io/trihart-proj/#secondPage">Work</a></li>
-                    <li><a href="about.html">Our Vision</a></li>
-                    <li><a href="about.html">Experiments</a></li>
-                    <li><a href="about.html">Contact</a></li>
+                  
+                </div>
+                <form class="container nav_form outline_block" action="#" method="post">
+                  <div class="col-10 form_heading outline_block_heading">
+                    <h3>START YOUR NEW PROJECT</h3>
+                  </div>
+                  <div class="col-10 checks">
+                    <div class="check_wrap">
+                      <input type="checkbox" class="checkbox" id="design">
+                      <label for="design" class="circle-empty"><span class="circle"></span></label>
+                      <label for="design">Design</label>
+                    </div>
+                    <div class="check_wrap">
+                      <input type="checkbox" class="checkbox" id="develop">
+                      <label for="develop" class="circle-empty"><span class="circle"></span></label>
+                      <label for="develop">Development</label>
+                    </div>
+                    <div class="check_wrap">
+                      <input type="checkbox" class="checkbox" id="brand">
+                      <label for="brand" class="circle-empty"><span class="circle"></span></label>
+                      <label for="brand">Branding</label>
+                    </div>
+                  </div>
+                  <ul class="col-10 form_inputs">
+                    <li><input type="text" class="textbox" placeholder="Name"></li>
+                    <li><input type="text" class="textbox" placeholder="Company"></li>
+                    <li><input type="text" class="textbox" placeholder="Email"></li>
                   </ul>
-                  </div><!-- end .container -->
-                  <!-- form -->
-                  <form class="container nav_form outline_block" action="#" method="post">
-                    <div class="col-10 form_heading outline_block_heading">
-                      <h3>START YOUR NEW PROJECT</h3>
-                    </div>
-                    <div class="col-10 checks">
-                      <div class="check_wrap">
-                        <input type="checkbox" class="checkbox" id="design">
-                        <label for="design">Design</label>
-                      </div>
-                      <div class="check_wrap">
-                        <input type="checkbox" class="checkbox" id="develop">
-                        <label for="develop">Development</label>
-                      </div>
-                      <div class="check_wrap">
-                        <input type="checkbox" class="checkbox" id="brand">
-                        <label for="brand">Branding</label>
-                      </div>
-                    </div>
-                    <ul class="col-10 form_inputs">
-                      <li><input type="text" class="textbox" placeholder="Name"></li>
-                      <li><input type="text" class="textbox" placeholder="Company"></li>
-                      <li><input type="text" class="textbox" placeholder="Email"></li>
-                    </ul>
-                    <div class="col-10 textarea_wrap">
-                      <textarea class="textbox" placeholder="Project Description"></textarea>
-                    </div>
-                    <div class="col-12 btn_wrap">
-                      <button type="submit" class="send_btn outline_block_btn">SEND</button>
-                    </div>
-                  </form>
-                  <!-- social -->
-                  <div class="container">
-                    <ul class="col-12 social__list">
-                      <li class="social__item"><a href="#">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="37" height="37" class="tw">
-                          <g fill-rule="evenodd" transform="translate(1 1)">
-                            <circle cx="17.5" cy="17.5" r="17.5" stroke="#FFF"/>
-                            <path fill="#FFF" d="M26 13.54c-.585.26-1.22.44-1.884.52.68-.408 1.197-1.05 1.445-1.82-.63.377-1.33.65-2.09.797-.59-.635-1.45-1.035-2.39-1.035-1.81 0-3.28 1.47-3.28 3.282 0 .258.03.507.087.747-2.73-.13-5.145-1.44-6.766-3.422-.284.484-.445 1.05-.445 1.652 0 1.136.58 2.143 1.46 2.73-.54-.016-1.04-.168-1.484-.413v.04c0 1.592 1.133 2.92 2.63 3.223-.273.07-.565.11-.863.11-.21 0-.415-.02-.62-.057.42 1.303 1.63 2.25 3.067 2.28-1.125.878-2.54 1.4-4.08 1.4-.262 0-.52-.014-.78-.043 1.452.93 3.177 1.47 5.03 1.47 6.036 0 9.337-5 9.337-9.335l-.01-.425c.646-.464 1.2-1.04 1.64-1.7z"/>
-                          </g>
-                        </svg>
-                      </a>
-                    </li>
+                  <div class="col-10 textarea_wrap">
+                    <textarea class="textbox" placeholder="Project Description"></textarea>
+                  </div>
+                  <div class="col-12 btn_wrap">
+                    <button type="submit" class="send_btn outline_block_btn">SEND</button>
+                  </div>
+                </form>
+                <!-- social -->
+                <div class="container">
+                  <ul class="col-12 social__list">
                     <li class="social__item"><a href="#">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="37" height="37" class="in">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="37" height="37" class="tw">
                         <g fill-rule="evenodd" transform="translate(1 1)">
                           <circle cx="17.5" cy="17.5" r="17.5" stroke="#FFF"/>
-                          <path fill="#FFF" d="M10.193 25h3.36V14.907h-3.36V25zm14.39-9.17c-.705-.77-1.64-1.156-2.8-1.156-.427 0-.816.052-1.166.157-.35.11-.645.258-.886.447-.24.19-.43.367-.572.53-.135.155-.268.335-.396.538V14.91h-3.35l.01.488c.006.326.01 1.33.01 3.015s-.008 3.88-.02 6.59h3.35V19.37c0-.345.037-.62.11-.824.144-.346.36-.636.648-.87.29-.235.647-.352 1.074-.352.586 0 1.016.203 1.29.607.276.407.413.966.413 1.678V25h3.35v-5.785c0-1.486-.352-2.615-1.058-3.385zm-12.688-5.78c-.564 0-1.02.165-1.37.494-.35.33-.525.745-.525 1.247 0 .5.17.91.51 1.247.338.332.787.498 1.344.498h.02c.57 0 1.03-.166 1.38-.498.35-.333.52-.747.514-1.243-.006-.5-.18-.917-.52-1.246-.338-.33-.79-.494-1.353-.494z"/>
+                          <path fill="#FFF" d="M26 13.54c-.585.26-1.22.44-1.884.52.68-.408 1.197-1.05 1.445-1.82-.63.377-1.33.65-2.09.797-.59-.635-1.45-1.035-2.39-1.035-1.81 0-3.28 1.47-3.28 3.282 0 .258.03.507.087.747-2.73-.13-5.145-1.44-6.766-3.422-.284.484-.445 1.05-.445 1.652 0 1.136.58 2.143 1.46 2.73-.54-.016-1.04-.168-1.484-.413v.04c0 1.592 1.133 2.92 2.63 3.223-.273.07-.565.11-.863.11-.21 0-.415-.02-.62-.057.42 1.303 1.63 2.25 3.067 2.28-1.125.878-2.54 1.4-4.08 1.4-.262 0-.52-.014-.78-.043 1.452.93 3.177 1.47 5.03 1.47 6.036 0 9.337-5 9.337-9.335l-.01-.425c.646-.464 1.2-1.04 1.64-1.7z"/>
                         </g>
                       </svg>
                     </a>
                   </li>
                   <li class="social__item"><a href="#">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="37" height="37" class="fb">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="37" height="37" class="in">
                       <g fill-rule="evenodd" transform="translate(1 1)">
                         <circle cx="17.5" cy="17.5" r="17.5" stroke="#FFF"/>
-                        <path fill="#FFF" d="M20.695 11.215l-1.918-.003c-2.155 0-3.547 1.43-3.547 3.64v1.678H13.3c-.165 0-.3.134-.3.3v2.433c0 .165.135.3.3.3h1.93V25.7c0 .165.135.3.302.3h2.515c.166 0 .3-.135.3-.3v-6.136h2.256c.167 0 .3-.136.3-.302l.003-2.43c0-.08-.033-.157-.09-.215-.055-.056-.132-.087-.212-.087h-2.256v-1.423c0-.684.164-1.03 1.054-1.03l1.292-.002c.167 0 .3-.135.3-.3v-2.258c0-.167-.133-.3-.3-.302z"/>
+                        <path fill="#FFF" d="M10.193 25h3.36V14.907h-3.36V25zm14.39-9.17c-.705-.77-1.64-1.156-2.8-1.156-.427 0-.816.052-1.166.157-.35.11-.645.258-.886.447-.24.19-.43.367-.572.53-.135.155-.268.335-.396.538V14.91h-3.35l.01.488c.006.326.01 1.33.01 3.015s-.008 3.88-.02 6.59h3.35V19.37c0-.345.037-.62.11-.824.144-.346.36-.636.648-.87.29-.235.647-.352 1.074-.352.586 0 1.016.203 1.29.607.276.407.413.966.413 1.678V25h3.35v-5.785c0-1.486-.352-2.615-1.058-3.385zm-12.688-5.78c-.564 0-1.02.165-1.37.494-.35.33-.525.745-.525 1.247 0 .5.17.91.51 1.247.338.332.787.498 1.344.498h.02c.57 0 1.03-.166 1.38-.498.35-.333.52-.747.514-1.243-.006-.5-.18-.917-.52-1.246-.338-.33-.79-.494-1.353-.494z"/>
                       </g>
                     </svg>
                   </a>
                 </li>
-              </ul>
-            </div>
+                <li class="social__item"><a href="#">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="37" height="37" class="fb">
+                    <g fill-rule="evenodd" transform="translate(1 1)">
+                      <circle cx="17.5" cy="17.5" r="17.5" stroke="#FFF"/>
+                      <path fill="#FFF" d="M20.695 11.215l-1.918-.003c-2.155 0-3.547 1.43-3.547 3.64v1.678H13.3c-.165 0-.3.134-.3.3v2.433c0 .165.135.3.3.3h1.93V25.7c0 .165.135.3.302.3h2.515c.166 0 .3-.135.3-.3v-6.136h2.256c.167 0 .3-.136.3-.302l.003-2.43c0-.08-.033-.157-.09-.215-.055-.056-.132-.087-.212-.087h-2.256v-1.423c0-.684.164-1.03 1.054-1.03l1.292-.002c.167 0 .3-.135.3-.3v-2.258c0-.167-.133-.3-.3-.302z"/>
+                    </g>
+                  </svg>
+                </a>
+              </li>
+            </ul>
           </div>
-        </nav>
-        <nav class="grid_nav">
-          <ul class="sorting_list">
-            <li class="sorting_item"><a href="#" class="active">All</a></li>
-            <li class="sorting_item"><a href="#">Web</a></li>
-            <li class="sorting_item"><a href="#">Mobile</a></li>
-            <li class="sorting_item"><a href="#">Identity</a></li>
-            <li class="sorting_item grid_close"><a href="#">
-              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20">
-                <g fill="#FFF" fill-rule="evenodd">
-                  <path d="M2.12 0L19.8 17.676l-2.122 2.12L0 2.122z"/>
-                  <path d="M0 17.678L17.676 0l2.12 2.12L2.122 19.8z"/>
-                </g>
-              </svg>
-            </a>
-          </li>
-        </ul>
-         <ul class="prod_list">
-        <li class="prod_item">
+        </div>
+      </nav>
+      <nav class="grid_nav">
+        <ul class="sorting_list">
+          <li class="sorting_item"><a href="#" class="filter" data-filter="all">All</a></li>
+          <li class="sorting_item"><a href="#" class="filter" data-filter=".category-1">Web</a></li>
+          <li class="sorting_item"><a href="#" class="filter" data-filter=".category-2">Mobile</a></li>
+          <li class="sorting_item"><a href="#" class="filter" data-filter=".category-3">Identity</a></li>
+          <li class="sorting_item grid_close"><a href="#">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20">
+              <g fill="#FFF" fill-rule="evenodd">
+                <path d="M2.12 0L19.8 17.676l-2.122 2.12L0 2.122z"/>
+                <path d="M0 17.678L17.676 0l2.12 2.12L2.122 19.8z"/>
+              </g>
+            </svg>
+          </a>
+        </li>
+      </ul>
+      <ul class="prod_list">
+        <li class="prod_item mix category-1" >
           <div style="background-image: url('img/gavigan-mini.jpg');
             background-repeat: no-repeat;">
             <span class="port_item_cont">
@@ -182,7 +188,7 @@
             </span>
           </div>
         </li>
-        <li class="prod_item">
+        <li class="prod_item mix category-2" >
           <div style="background-image: url('img/purple_ocean_mini.jpg');
             background-repeat: no-repeat;">
             <span class="port_item_cont">
@@ -191,7 +197,7 @@
             </span>
           </div>
         </li>
-        <li class="prod_item">
+        <li class="prod_item mix category-1" >
           <div style="background-image: url('img/scoop-mini.jpg');
             background-repeat: no-repeat;">
             <span class="port_item_cont">
@@ -200,7 +206,7 @@
             </span>
           </div>
         </li>
-        <li class="prod_item">
+        <li class="prod_item mix category-2" >
           <div style="background-image: url('img/voyzer-mini.jpg');
             background-repeat: no-repeat;">
             <span class="port_item_cont">
@@ -209,7 +215,7 @@
             </span>
           </div>
         </li>
-        <li class="prod_item">
+        <li class="prod_item mix category-3" >
           <div style="background-image: url('img/burberry-mini.jpg');
             background-repeat: no-repeat;">
             <span class="port_item_cont">
@@ -219,8 +225,8 @@
           </div>
         </li>
       </ul>
-      </nav>
-    </header>
+    </nav>
+  </header>
     <!-- end .header -->
     <!-- start fullpage scroll -->
     <section class="prod_page" style="">
@@ -314,6 +320,8 @@
     <script src="js/vendor/animate/animate-css.js"></script>
     <script src="libs/fullPagae/jquery.fullPage.min.js"></script>
     <script src="libs/animBg/animBg.js"></script>
+    <script src="libs/owl.carousel/owl.carousel.min.js"></script>
+    <script src="http://cdn.jsdelivr.net/jquery.mixitup/latest/jquery.mixitup.min.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>
