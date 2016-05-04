@@ -9,10 +9,10 @@ $(function(){
   $('#fullpage').fullpage({
     verticalCentered: true,
     css3: true,
-    anchors: ['firstPage', 'secondPage', '3rdPage', '4thpage', '5thpage', '6thpage', '7thpage'],
+    anchors: ['firstPage', 'secondPage', '3rdPage', '4thpage', '5thpage', '6thpage'],
     navigation: true,
     navigationPosition: 'right',
-    navigationTooltips: ['', 'Christopher Fischer —', 'COOPER & ELLA —', 'WAINAPP —', 'WAINAPP —', 'WAINAPP —'],
+    navigationTooltips: ['', 'Mignonne Gavigan —', 'Purple Ocean —', 'Scoop —', 'Voyzer —', 'Burberry —'],
     afterLoad: function(anchorLink, index) {
       if (anchorLink == 'firstPage') {
           $('.section1 h2, .section1 p').addClass('active animated fadeInUp');

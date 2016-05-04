@@ -603,6 +603,7 @@ a {
 
 .navigation li {
   text-align: center;
+  margin-bottom: 15px;
 }
 
 .navigation li a {
@@ -774,7 +775,7 @@ a {
 }
 
 .checks {
-  margin-bottom: 26px;
+  margin-bottom: 40px;
 }
 
 @media screen and (min-width: 768px) and (max-width: 1024px) {
@@ -808,6 +809,10 @@ a {
     margin-left: 0;
     margin-right: 0;
   }
+}
+
+.check_wrap:first-of-type {
+  margin-left: -5px;
 }
 
 .check_wrap:last-of-type {
@@ -1122,22 +1127,6 @@ ul.col-10.form_inputs li:last-of-type {
   display: none;
 }
 
-#fp-nav ul li:nth-of-type(2) a span,
-#fp-nav ul li:last-of-type a span {
-  background: #838181;
-}
-
-#fp-nav ul li:nth-of-type(3) a span,
-#fp-nav ul li:nth-of-type(5) a span {
-  background: #C2C1C1;
-}
-
-#fp-nav ul li:nth-of-type(4) a span {
-  height: 9px;
-  width: 9px;
-  border: 1px solid #fff;
-}
-
 #fp-nav {
   -webkit-animation-delay: 1.7s;
           animation-delay: 1.7s;
@@ -1145,19 +1134,22 @@ ul.col-10.form_inputs li:last-of-type {
 }
 
 #fp-nav ul li a span {
+  background: #fff;
+  opacity: 0.5;
   height: 10px;
   width: 10px;
 }
 
 #fp-nav ul li a.active span {
   background: #fff;
+  opacity: 1;
   height: 10px;
   width: 10px;
   margin: -2px 0 0 -2px;
 }
 
-#fp-nav ul li a:hover a {
-  background: #fff;
+#fp-nav ul li a:hover span {
+  opacity: 1;
 }
 
 .section {
@@ -1225,7 +1217,7 @@ ul.col-10.form_inputs li:last-of-type {
 .page_number {
   position: relative;
   top: 205px;
-  left: -17px;
+  left: 17px;
 }
 
 @media screen and (min-width: 768px) and (max-width: 1024px) {
@@ -1320,13 +1312,19 @@ ul.col-10.form_inputs li:last-of-type {
 
 #right_arrow svg {
   width: 40px;
-  -webkit-transform: rotate(270deg);
-      -ms-transform: rotate(270deg);
-          transform: rotate(270deg);
+  height: 40px;
   -webkit-transform-origin: 100% 0;
       -ms-transform-origin: 100% 0;
           transform-origin: 100% 0;
   margin-left: 46px;
+  -webkit-transition: all 0.5s;
+          transition: all 0.5s;
+}
+
+#right_arrow svg:hover {
+  -webkit-transform: scale(1.5);
+      -ms-transform: scale(1.5);
+          transform: scale(1.5);
 }
 
 .tags {
@@ -1371,6 +1369,7 @@ ul.col-10.form_inputs li:last-of-type {
 .tag {
   display: block;
   text-transform: uppercase;
+  opacity: 0.6;
 }
 
 .tag:nth-of-type(odd) {
@@ -1563,6 +1562,7 @@ ul.col-10.form_inputs li:last-of-type {
   color: #747475;
   font-size: 1.125em;
   line-height: 1.7;
+  padding-top: 10px;
 }
 
 @media screen and (min-width: 300px) and (max-width: 767px) {
@@ -1949,6 +1949,7 @@ ul.col-10.form_inputs li:last-of-type {
 
 .made_in_ny {
   text-align: center;
+  padding-top: 36px;
 }
 
 .port_item_cont {

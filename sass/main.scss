@@ -553,11 +553,11 @@ a {
 .navigation {
   // @include push(5);
   text-align: center;
-
   margin-bottom: 50px;
 
   li {
     text-align: center;
+    margin-bottom: 15px;
 
     a {
       font-size: em(28);
@@ -699,7 +699,7 @@ a {
 }
 
 .checks {
-  margin-bottom: 26px;
+  margin-bottom: 40px;
 
   &.checks {
     @media screen and (min-width: 768px) and (max-width: 1024px) {
@@ -721,7 +721,12 @@ a {
   @media screen and (min-width: 300px) and (max-width: 767px) {
     @include span(12);
   }
-  &:last-of-type{
+
+  &:first-of-type{
+    margin-left: -5px;
+  }
+
+  &:last-of-type {
     margin-right: 0;
   }
 }
@@ -849,11 +854,7 @@ ul.col-10.form_inputs {
   }
 }
 
-
-
-
-
-.circle-empty{
+.circle-empty {
   display: inline-block;
   margin-right: 4px;
   width: 12px;
@@ -862,7 +863,7 @@ ul.col-10.form_inputs {
   border: 1px solid #fff;
 }
 
-.circle{
+.circle {
   position: absolute;
   top: 0;
   left: 0;
@@ -940,13 +941,14 @@ ul.col-10.form_inputs {
 // }
 
 .grid_opn_wrap {
-    text-align: center;
-    padding-top: 7px;
+  text-align: center;
+  padding-top: 7px;
 }
 
 .grid_nav {
   position: fixed;
   height: 100%;
+
   // top: 0;
   top: -100%;
   width: 100%;
@@ -1031,10 +1033,10 @@ ul.col-10.form_inputs {
     display: none;
   }
 
-  &:nth-of-type(2) a span,
-  &:last-of-type a span {
-    background: #838181;
-  }
+  // &:nth-of-type(2) a span,
+  // &:last-of-type a span {
+  //   background: #838181;
+  // }
 
   // &:nth-of-type(2) a span:before{
   //   content: '^';
@@ -1043,16 +1045,16 @@ ul.col-10.form_inputs {
   //   top: -20px;
   //   color: #C2C1C1;
   // }
-  &:nth-of-type(3) a span,
-  &:nth-of-type(5) a span {
-    background: #C2C1C1;
-  }
+  // &:nth-of-type(3) a span,
+  // &:nth-of-type(5) a span {
+  //   background: #C2C1C1;
+  // }
 
-  &:nth-of-type(4) a span {
-    height: 9px;
-    width: 9px;
-    border: 1px solid #fff;
-  }
+  // &:nth-of-type(4) a span {
+  //   height: 9px;
+  //   width: 9px;
+  //   border: 1px solid #fff;
+  // }
 }
 
 #fp-nav {
@@ -1062,22 +1064,22 @@ ul.col-10.form_inputs {
 
 #fp-nav ul li a {
   span {
+    background: #fff;
+    opacity: 0.5;
     height: 10px;
     width: 10px;
   }
 
-  // &:first-of-type{
-  //   display: none;
-  // }
   &.active span {
     background: #fff;
+    opacity: 1;
     height: 10px;
     width: 10px;
     margin: -2px 0 0 -2px;
   }
 
-  &:hover a {
-    background: #fff;
+  &:hover span {
+    opacity: 1;
   }
 }
 
@@ -1137,7 +1139,7 @@ ul.col-10.form_inputs {
 .page_number {
   position: relative;
   top: 205px;
-  left: -17px;
+  left: 17px;
 
   @media screen and (min-width: 768px) and (max-width: 1024px) {
     top: 117px;
@@ -1220,9 +1222,13 @@ ul.col-10.form_inputs {
 #right_arrow {
   svg {
     width: 40px;
-    transform: rotate(270deg);
+    height: 40px;
     transform-origin: 100% 0;
     margin-left: 46px;
+    transition: all 0.5s;
+    &:hover{
+      transform: scale(1.5);
+    }
   }
 }
 
@@ -1263,6 +1269,7 @@ ul.col-10.form_inputs {
 .tag {
   display: block;
   text-transform: uppercase;
+  opacity: 0.6;
 
   &:nth-of-type(odd) {
     padding-right: 60px;
@@ -1430,6 +1437,7 @@ ul.col-10.form_inputs {
     color: #747475;
     font-size: em(18);
     line-height: 1.7;
+    padding-top: 10px;
 
     @media screen and (min-width: 300px) and (max-width: 767px) {
       @include span(10);
@@ -1590,7 +1598,8 @@ ul.col-10.form_inputs {
     border: 3px solid #2C2C2E;
     margin: 0 auto 58px auto;
     text-align: center;
-    img{
+
+    img {
       vertical-align: middle;
     }
 
@@ -1601,7 +1610,7 @@ ul.col-10.form_inputs {
     }
   }
 
-  .helper{
+  .helper {
     display: inline-block;
     height: 100%;
     vertical-align: middle;
@@ -1739,6 +1748,7 @@ ul.col-10.form_inputs {
 
 .made_in_ny {
   text-align: center;
+  padding-top: 36px;
 }
 
 // .about_logo_wrap {
@@ -1784,8 +1794,8 @@ ul.col-10.form_inputs {
 // }
 
 .rotate {
-  svg{
-  animation: rotate 2s infinite ease;
+  svg {
+    animation: rotate 2s infinite ease;
   }
 }
 
@@ -1793,21 +1803,20 @@ ul.col-10.form_inputs {
   0% {
     transform: rotate(0deg);
   }
-  
+
   25% {
     transform: rotate(180deg);
   }
-  
+
   50% {
     transform: rotate(180deg);
   }
-  
+
   75% {
     transform: rotate(360deg);
   }
-  
+
   100% {
     transform: rotate(360deg);
   }
 }
-
