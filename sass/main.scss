@@ -1002,7 +1002,6 @@ ul.col-10.form_inputs {
 .prod_item {
   width: 33.3333%;
   float: left;
-
   height: calc(100vh / 3);
 
   div {
@@ -1284,14 +1283,27 @@ ul.col-10.form_inputs {
 
 .next {
   position: absolute;
+  width: 41px;
+  height: 41px;
   top: 32px;
   right: -205px;
+  border: 1px solid #222;
+  border-radius: 50%;
+  color: #000;
 }
 
 .prev {
   position: absolute;
+  width: 170px;
+  height: 41px;
   top: 32px;
   left: -205px;
+  border: 1px solid #222;
+  border-top-left-radius: 40px 30px;
+  border-bottom-left-radius: 40px 30px;
+  border-top-right-radius: 40px 30px;
+  border-bottom-right-radius: 40px 30px;
+  color: #000;
 }
 
 .prod_page {
@@ -1599,7 +1611,7 @@ ul.col-10.form_inputs {
     text-align: left;
   }
 
-  .circle {
+  .about_circle {
     width: 180px;
     height: 180px;
     border-radius: 50%;
@@ -1797,7 +1809,7 @@ ul.col-10.form_inputs {
   }
 }
 
-.mix{
+.mix {
   display: none;
 }
 

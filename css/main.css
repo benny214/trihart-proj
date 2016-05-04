@@ -1381,14 +1381,27 @@ ul.col-10.form_inputs li:last-of-type {
 
 .next {
   position: absolute;
+  width: 41px;
+  height: 41px;
   top: 32px;
   right: -205px;
+  border: 1px solid #222;
+  border-radius: 50%;
+  color: #000;
 }
 
 .prev {
   position: absolute;
+  width: 170px;
+  height: 41px;
   top: 32px;
   left: -205px;
+  border: 1px solid #222;
+  border-top-left-radius: 40px 30px;
+  border-bottom-left-radius: 40px 30px;
+  border-top-right-radius: 40px 30px;
+  border-bottom-right-radius: 40px 30px;
+  color: #000;
 }
 
 .prod_page h2 {
@@ -1770,7 +1783,7 @@ ul.col-10.form_inputs li:last-of-type {
   }
 }
 
-.team_members .circle {
+.team_members .about_circle {
   width: 180px;
   height: 180px;
   border-radius: 50%;
@@ -1779,12 +1792,12 @@ ul.col-10.form_inputs li:last-of-type {
   text-align: center;
 }
 
-.team_members .circle img {
+.team_members .about_circle img {
   vertical-align: middle;
 }
 
 @media screen and (min-width: 300px) and (max-width: 767px) {
-  .team_members .circle {
+  .team_members .about_circle {
     width: 90px;
     height: 90px;
     float: left;
