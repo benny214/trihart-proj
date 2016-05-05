@@ -401,14 +401,6 @@ a {
   background-color: transparent;
 }
 
-@media screen and (min-width: 300px) and (max-width: 767px) {
-  .nav_btn img {
-    -webkit-transform: scale(2);
-        -ms-transform: scale(2);
-            transform: scale(2);
-  }
-}
-
 .header {
   padding-top: 25px;
   position: fixed;
@@ -724,7 +716,7 @@ a {
   resize: none;
   display: block;
   width: 100%;
-  margin-top: 52px;
+  margin-top: 15px;
   line-height: 1;
 }
 
@@ -851,6 +843,7 @@ ul.col-10.form_inputs li:last-of-type {
 
 .col-10.textarea_wrap {
   margin-bottom: 64px;
+  margin-top: 0;
 }
 
 @media screen and (min-width: 768px) and (max-width: 1024px) {

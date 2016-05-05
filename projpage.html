@@ -86,35 +86,38 @@
                   </div><!-- end .container -->
                   <!-- form -->
                   <form class="container nav_form outline_block" action="#" method="post">
-                    <div class="col-10 form_heading outline_block_heading">
-                      <h3>START YOUR NEW PROJECT</h3>
+                  <div class="col-10 form_heading outline_block_heading">
+                    <h3>START YOUR NEW PROJECT</h3>
+                  </div>
+                  <div class="col-10 checks">
+                    <div class="check_wrap">
+                      <input type="radio" class="checkbox" id="design" name="subject" value="design">
+                      <label for="design" class="circle-empty"><span class="circle"></span></label>
+                      <label for="design">Design</label>
                     </div>
-                    <div class="col-10 checks">
-                      <div class="check_wrap">
-                        <input type="checkbox" class="checkbox" id="design">
-                        <label for="design">Design</label>
-                      </div>
-                      <div class="check_wrap">
-                        <input type="checkbox" class="checkbox" id="develop">
-                        <label for="develop">Development</label>
-                      </div>
-                      <div class="check_wrap">
-                        <input type="checkbox" class="checkbox" id="brand">
-                        <label for="brand">Branding</label>
-                      </div>
+                    <div class="check_wrap">
+                      <input type="radio" class="checkbox" id="develop" name="subject" value="develop">
+                      <label for="develop" class="circle-empty"><span class="circle"></span></label>
+                      <label for="develop">Development</label>
                     </div>
-                    <ul class="col-10 form_inputs">
-                      <li><input type="text" class="textbox" placeholder="Name"></li>
-                      <li><input type="text" class="textbox" placeholder="Company"></li>
-                      <li><input type="text" class="textbox" placeholder="Email"></li>
-                    </ul>
-                    <div class="col-10 textarea_wrap">
-                      <textarea class="textbox" placeholder="Project Description"></textarea>
+                    <div class="check_wrap">
+                      <input type="radio" class="checkbox" id="brand" name="subject" value="branding">
+                      <label for="brand" class="circle-empty"><span class="circle"></span></label>
+                      <label for="brand">Branding</label>
                     </div>
-                    <div class="col-12 btn_wrap">
-                      <button type="submit" class="send_btn outline_block_btn">SEND</button>
-                    </div>
-                  </form>
+                  </div>
+                  <ul class="col-10 form_inputs">
+                    <li><input type="text" class="textbox" placeholder="Name" name="name" required></li>
+                    <li><input type="text" class="textbox" placeholder="Company" name="company" required></li>
+                    <li><input type="text" class="textbox" placeholder="Email" name="email" required></li>
+                  </ul>
+                  <div class="col-10 textarea_wrap">
+                    <textarea class="textbox" placeholder="Project Description" name="text"></textarea>
+                  </div>
+                  <div class="col-12 btn_wrap">
+                    <button type="submit" class="send_btn outline_block_btn">SEND</button>
+                  </div>
+                </form>
                   <!-- social -->
                   <div class="container">
                     <ul class="col-12 social__list">

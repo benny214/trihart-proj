@@ -374,11 +374,11 @@ a {
   border: none;
   background-color: rgba(0, 0, 0, 0);
 
-  img {
-    @media screen and (min-width: 300px) and (max-width: 767px) {
-      transform: scale(2);
-    }
-  }
+  // img {
+  //   @media screen and (min-width: 300px) and (max-width: 767px) {
+  //     transform: scale(2);
+  //   }
+  //}
 }
 
 .header {
@@ -655,7 +655,7 @@ a {
     resize: none;
     display: block;
     width: 100%;
-    margin-top: 52px;
+    margin-top: 15px;
     line-height: 1;
 
     @media screen and (min-width: 768px) and (max-width: 1024px) {
@@ -755,6 +755,7 @@ ul.col-10.form_inputs {
 
 .col-10.textarea_wrap {
   margin-bottom: 64px;
+  margin-top: 0;
 
   @media screen and (min-width: 768px) and (max-width: 1024px) {
     @include span(12);
@@ -904,7 +905,8 @@ ul.col-10.form_inputs {
   &:last-of-type {
     margin-right: 0;
   }
-  &:hover{
+
+  &:hover {
     border: 1px solid #fff;
     border-radius: 50%;
   }
@@ -915,12 +917,10 @@ ul.col-10.form_inputs {
   //   &.tw{
   //     transition: all .5s;
   //   }
-    
 
   //   &.in{
   //     transition: all .5s;
   //   }
-    
 
   //   &.fb{
   //     transition: all .5s;
@@ -1476,9 +1476,11 @@ ul.col-10.form_inputs {
     font-size: em(18);
     line-height: 1.7;
     margin-bottom: 50px;
-    &:last-of-type{
-    margin-bottom: 113px;
-}
+
+    &:last-of-type {
+      margin-bottom: 113px;
+    }
+
     @media screen and (min-width: 300px) and (max-width: 767px) {
       @include span(12);
 

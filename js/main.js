@@ -1,5 +1,35 @@
 $(document).ready(function() {
 
+//E-mail Ajax Send
+  $(".nav_form").submit(function() {
+    var th = $(this);
+    $.ajax({
+      type: "POST",
+      url: "mail.php",
+      data: th.serialize()
+    }).done(function() {
+      alert("Thank you!");
+      setTimeout(function() {
+        // Done Functions
+        th.trigger("reset");
+      }, 1000);
+    });
+    return false;
+  });
+
+  $(".nav_form").submit(function() {
+    $.ajax({
+      type: "POST",
+      url: "mail.php",
+      data: $(this).serialize()
+    }).done(function() {
+      $(this).find("input").val("");
+      alert("Thank you!");
+      $(".nav_form").trigger("reset");
+    });
+    return false;
+  });
+
 //fullpage scroll
   $('#fullpage').fullpage({
     verticalCentered: true,
