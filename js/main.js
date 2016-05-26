@@ -17,19 +17,6 @@ $(document).ready(function() {
     return false;
   });
 
-  $(".nav_form").submit(function() {
-    $.ajax({
-      type: "POST",
-      url: "mail.php",
-      data: $(this).serialize()
-    }).done(function() {
-      $(this).find("input").val("");
-      alert("Thank you!");
-      $(".nav_form").trigger("reset");
-    });
-    return false;
-  });
-
 //fullpage scroll
   $('#fullpage').fullpage({
     verticalCentered: true,
@@ -80,7 +67,7 @@ $(document).ready(function() {
 
 
 //fullpage menu
-  $('#toggle').click(function() {
+  $('.toggle').click(function() {
     $('.animation_wrap').removeClass('animated fadeOutUp');
     $('#overlay').addClass('open');
     $('.animation_wrap').addClass('animated fadeInDown');

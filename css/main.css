@@ -554,8 +554,7 @@ a {
   height: 0%;
   opacity: 0;
   visibility: hidden;
-  -webkit-transition: opacity 0.3s, visibility 0.3s, height 0.3s;
-          transition: opacity 0.3s, visibility 0.3s, height 0.3s;
+  transition: opacity .3s, visibility .3s, height .3s;
   overflow: hidden;
   padding-top: 25px;
   opacity: 0;
@@ -598,6 +597,12 @@ a {
   margin-bottom: 15px;
 }
 
+@media screen and (min-width: 300px) and (max-width: 767px) {
+  .navigation li {
+    margin-bottom: 5px;
+  }
+}
+
 .navigation li a {
   font-size: 1.75em;
 }
@@ -623,6 +628,13 @@ a {
     float: left;
     margin-left: 0;
     margin-right: 0;
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (min-width: 300px) and (max-width: 767px) {
+  .nav_form .outline_block_heading {
+    display: none;
   }
 }
 
@@ -735,26 +747,25 @@ a {
 .outline_block textarea::-webkit-input-placeholder {
   line-height: 1;
   opacity: 1;
-  -webkit-transition: opacity 0.3s ease;
-          transition: opacity 0.3s ease;
+  transition: opacity .3s ease;
 }
 
 .outline_block textarea::-moz-placeholder {
   line-height: 1;
   opacity: 1;
-  transition: opacity 0.3s ease;
+  transition: opacity .3s ease;
 }
 
 .outline_block textarea:-moz-placeholder {
   line-height: 1;
   opacity: 1;
-  transition: opacity 0.3s ease;
+  transition: opacity .3s ease;
 }
 
 .outline_block textarea:-ms-input-placeholder {
   line-height: 1;
   opacity: 1;
-  transition: opacity 0.3s ease;
+  transition: opacity .3s ease;
 }
 
 @media screen and (min-width: 768px) and (max-width: 1024px) {
@@ -794,24 +805,22 @@ a {
   margin-right: 57px;
 }
 
-@media screen and (min-width: 300px) and (max-width: 767px) {
-  .check_wrap {
-    width: 100%;
-    float: left;
-    margin-left: 0;
-    margin-right: 0;
-  }
-  .check_wrap:first-of-type {
-    margin-left: 0;
-  }
-}
-
 .check_wrap:first-of-type {
   margin-left: -5px;
 }
 
 .check_wrap:last-of-type {
   margin-right: 0;
+}
+
+@media screen and (min-width: 300px) and (max-width: 767px) {
+  .check_wrap {
+    width: 100%;
+    float: left;
+    margin-left: 0;
+    margin-right: 0;
+    margin-left: -5px;
+  }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1024px) {
@@ -889,50 +898,48 @@ ul.col-10.form_inputs li:last-of-type {
   font-size: 1.125em;
   line-height: 1.7;
   opacity: 1;
-  -webkit-transition: opacity 0.3s ease;
-          transition: opacity 0.3s ease;
+  transition: opacity .3s ease;
 }
 
 .textbox::-moz-placeholder {
   font-size: 1.125em;
   line-height: 1.7;
   opacity: 1;
-  transition: opacity 0.3s ease;
+  transition: opacity .3s ease;
 }
 
 .textbox:-moz-placeholder {
   font-size: 1.125em;
   line-height: 1.7;
   opacity: 1;
-  transition: opacity 0.3s ease;
+  transition: opacity .3s ease;
 }
 
 .textbox:-ms-input-placeholder {
   font-size: 1.125em;
   line-height: 1.7;
   opacity: 1;
-  transition: opacity 0.3s ease;
+  transition: opacity .3s ease;
 }
 
 .textbox:focus::-webkit-input-placeholder {
   opacity: 0;
-  -webkit-transition: opacity 0.3s ease;
-          transition: opacity 0.3s ease;
+  transition: opacity .3s ease;
 }
 
 .textbox:focus::-moz-placeholder {
   opacity: 0;
-  transition: opacity 0.3s ease;
+  transition: opacity .3s ease;
 }
 
 .textbox:focus:-moz-placeholder {
   opacity: 0;
-  transition: opacity 0.3s ease;
+  transition: opacity .3s ease;
 }
 
 .textbox:focus:-ms-input-placeholder {
   opacity: 0;
-  transition: opacity 0.3s ease;
+  transition: opacity .3s ease;
 }
 
 .btn_wrap {
@@ -950,8 +957,7 @@ ul.col-10.form_inputs li:last-of-type {
   letter-spacing: 4px;
   width: 140px;
   height: 44px;
-  -webkit-transition: all 0.3s ease-in;
-          transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
 }
 
 @media screen and (min-width: 300px) and (max-width: 767px) {
@@ -983,6 +989,10 @@ ul.col-10.form_inputs li:last-of-type {
   display: none;
 }
 
+.checkbox {
+  display: none;
+}
+
 .checkbox:checked + label .circle {
   display: block;
 }
@@ -1002,8 +1012,7 @@ ul.col-10.form_inputs li:last-of-type {
   margin-right: 10px;
   width: 37px;
   height: 37px;
-  -webkit-transition: all 0.5s;
-          transition: all 0.5s;
+  transition: all .5s;
   border: 1px solid #161618;
 }
 
@@ -1016,9 +1025,35 @@ ul.col-10.form_inputs li:last-of-type {
   border-radius: 50%;
 }
 
+@media screen and (min-width: 300px) and (max-width: 767px) {
+  .logo {
+    width: 31.91489%;
+    float: left;
+    margin-right: 2.12766%;
+  }
+}
+
 .grid_opn_wrap {
   text-align: center;
   padding-top: 7px;
+}
+
+@media screen and (min-width: 300px) and (max-width: 767px) {
+  .grid_opn_wrap {
+    width: 31.91489%;
+    float: left;
+    margin-right: 2.12766%;
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 300px) and (max-width: 767px) {
+  .toggle_nav {
+    width: 31.91489%;
+    float: right;
+    margin-right: 0;
+    text-align: right;
+  }
 }
 
 .grid_nav {
@@ -1078,7 +1113,6 @@ ul.col-10.form_inputs li:last-of-type {
 .prod_item {
   width: 33.3333%;
   float: left;
-  height: -webkit-calc(100vh / 3);
   height: calc(100vh / 3);
 }
 
@@ -1307,8 +1341,7 @@ ul.col-10.form_inputs li:last-of-type {
       -ms-transform-origin: 100% 0;
           transform-origin: 100% 0;
   margin-left: 46px;
-  -webkit-transition: all 0.5s;
-          transition: all 0.5s;
+  transition: all 0.5s;
   -webkit-transform: scale(1);
       -ms-transform: scale(1);
           transform: scale(1);
@@ -1379,8 +1412,7 @@ ul.col-10.form_inputs li:last-of-type {
   border: 1px solid #222;
   border-radius: 50%;
   color: #000;
-  -webkit-transition: all 0.5s;
-          transition: all 0.5s;
+  transition: all .5s;
 }
 
 .next svg {
@@ -1414,8 +1446,7 @@ ul.col-10.form_inputs li:last-of-type {
   border: 1px solid #222;
   border-radius: 50%;
   color: #000;
-  -webkit-transition: all 0.5s;
-          transition: all 0.5s;
+  transition: all .5s;
 }
 
 .prev svg {
@@ -1445,8 +1476,7 @@ ul.col-10.form_inputs li:last-of-type {
   right: 0;
   bottom: 0;
   margin: auto;
-  -webkit-transition: all 0.5s;
-          transition: all 0.5s;
+  transition: all .5s;
   opacity: 0;
 }
 
@@ -1572,7 +1602,7 @@ ul.col-10.form_inputs li:last-of-type {
 }
 
 .prod_desc p:last-of-type {
-  margin-bottom: 113px;
+  margin-bottom: 66px;
 }
 
 @media screen and (min-width: 300px) and (max-width: 767px) {
@@ -1833,6 +1863,12 @@ ul.col-10.form_inputs li:last-of-type {
   }
 }
 
+@media screen and (min-width: 300px) and (max-width: 767px) {
+  .team_members:nth-of-type(2) .about_circle img {
+    margin-top: 33px;
+  }
+}
+
 .team_members .about_circle {
   width: 180px;
   height: 180px;
@@ -1847,6 +1883,13 @@ ul.col-10.form_inputs li:last-of-type {
 }
 
 @media screen and (min-width: 300px) and (max-width: 767px) {
+  .team_members .about_circle img {
+    margin-top: 21px;
+    width: 70px;
+  }
+}
+
+@media screen and (min-width: 300px) and (max-width: 767px) {
   .team_members .about_circle {
     width: 90px;
     height: 90px;
@@ -1858,6 +1901,12 @@ ul.col-10.form_inputs li:last-of-type {
   display: inline-block;
   height: 100%;
   vertical-align: middle;
+}
+
+@media screen and (min-width: 300px) and (max-width: 767px) {
+  .team_members .helper {
+    height: 0;
+  }
 }
 
 .team_members p {
@@ -2034,7 +2083,6 @@ ul.col-10.form_inputs li:last-of-type {
   text-align: center;
   padding-top: 5%;
   opacity: 0;
-  -webkit-transition: all 0.5s;
   transition: all 0.5s;
 }
 
@@ -2050,8 +2098,7 @@ ul.col-10.form_inputs li:last-of-type {
   color: #fff;
   margin-top: 30px;
   font-size: 1.2em;
-  -webkit-transition: all 0.5s;
-          transition: all 0.5s;
+  transition: all 0.5s;
 }
 
 .port_item_cont a:hover {
@@ -2112,4 +2159,19 @@ ul.col-10.form_inputs li:last-of-type {
     -webkit-transform: rotate(360deg);
             transform: rotate(360deg);
   }
+}
+
+.presentation_img {
+  text-align: center;
+  margin-bottom: 38px;
+}
+
+.visit_btn {
+  background-color: #3E62E0;
+  font-size: 1em;
+  letter-spacing: 4px;
+  padding: 15px 36px 15px 31px;
+  color: #fff;
+  float: right;
+  margin-bottom: 75px;
 }

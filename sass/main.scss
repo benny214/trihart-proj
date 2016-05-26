@@ -558,6 +558,9 @@ a {
   li {
     text-align: center;
     margin-bottom: 15px;
+    @media screen and (min-width: 300px) and (max-width: 767px){
+      margin-bottom: 5px;
+    }
 
     a {
       font-size: em(28);
@@ -572,13 +575,19 @@ a {
     @include push(4.5);
 
     @include span(3);
+    
   }
 
   @media screen and (min-width: 300px) and (max-width: 767px) {
     @include span(12);
+    margin-bottom: 20px;
   }
 }
-
+.nav_form .outline_block_heading{
+  @media screen and (min-width: 300px) and (max-width: 767px){
+    display: none;
+  }
+}
 .outline_block_heading {
   @include push(1);
 
@@ -718,13 +727,7 @@ a {
   display: inline-block;
   margin-right: 57px;
 
-  @media screen and (min-width: 300px) and (max-width: 767px) {
-    @include span(12);
-
-    &:first-of-type {
-      margin-left: 0;
-    }
-  }
+  
 
   &:first-of-type {
     margin-left: -5px;
@@ -732,6 +735,13 @@ a {
 
   &:last-of-type {
     margin-right: 0;
+  }
+
+  @media screen and (min-width: 300px) and (max-width: 767px) {
+    @include span(12);
+
+      margin-left: -5px;
+    
   }
 }
 
@@ -882,6 +892,10 @@ ul.col-10.form_inputs {
   display: none;
 }
 
+.checkbox{
+  display: none;
+}
+
 .checkbox:checked + label .circle {
   display: block;
 }
@@ -955,9 +969,26 @@ ul.col-10.form_inputs {
 //   }
 // }
 
+.logo{
+  @media screen and (min-width: 300px) and (max-width: 767px){
+    @include span(4);
+  }
+}
+
 .grid_opn_wrap {
   text-align: center;
   padding-top: 7px;
+  @media screen and (min-width: 300px) and (max-width: 767px){
+    @include span(4);
+    text-align: center;
+  }
+}
+
+.toggle_nav{
+  @media screen and (min-width: 300px) and (max-width: 767px){
+    @include span(last 4);
+    text-align: right;
+  }
 }
 
 .grid_nav {
@@ -1478,7 +1509,7 @@ ul.col-10.form_inputs {
     margin-bottom: 50px;
 
     &:last-of-type {
-      margin-bottom: 113px;
+      margin-bottom: 66px;
     }
 
     @media screen and (min-width: 300px) and (max-width: 767px) {
@@ -1682,6 +1713,12 @@ ul.col-10.form_inputs {
     text-align: left;
   }
 
+  &:nth-of-type(2) .about_circle img{
+        @media screen and (min-width: 300px) and (max-width: 767px){
+          margin-top: 33px;
+        }
+      }
+
   .about_circle {
     width: 180px;
     height: 180px;
@@ -1689,9 +1726,16 @@ ul.col-10.form_inputs {
     border: 3px solid #2C2C2E;
     margin: 0 auto 58px auto;
     text-align: center;
+    
+
 
     img {
       vertical-align: middle;
+      @media screen and (min-width: 300px) and (max-width: 767px){
+        margin-top: 21px;
+        width: 70px;
+      }
+      
     }
 
     @media screen and (min-width: 300px) and (max-width: 767px) {
@@ -1705,6 +1749,9 @@ ul.col-10.form_inputs {
     display: inline-block;
     height: 100%;
     vertical-align: middle;
+    @media screen and (min-width: 300px) and (max-width: 767px){
+      height: 0;
+    }
   }
 
   p {
@@ -1910,4 +1957,19 @@ ul.col-10.form_inputs {
   100% {
     transform: rotate(360deg);
   }
+}
+
+.presentation_img{
+  text-align: center;
+  margin-bottom: 38px;
+}
+
+.visit_btn{
+  background-color: #3E62E0;
+  font-size: em(16);
+  letter-spacing: 4px;
+  padding: 15px 36px 15px 31px;
+  color: #fff;
+  float: right;
+  margin-bottom: 75px;
 }
