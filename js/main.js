@@ -111,7 +111,7 @@ $(document).ready(function() {
 
 $(window).load(function() {
 
-  $('.loader_inner').fadeOut();
+  $('.inner__wrap').fadeOut();
   $('.loader').delay(400).fadeOut('slow');
 
   $('.main h1').addClass('animated fadeInUp');
